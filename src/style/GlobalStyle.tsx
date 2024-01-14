@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: white;
+        //color: white;
         line-height: 1.2;
         min-width: 360px;
     }
@@ -58,12 +58,12 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    section:nth-of-type(odd) {
-        background-color: ${Theme.colors.primary}
-    }
-    section:nth-of-type(even) {
-        background-color: ${Theme.colors.secondary}
-    }
+    // section:nth-of-type(odd) {
+    //     background-color: ${Theme.colors.primary}
+    // }
+    // section:nth-of-type(even) {
+    //     background-color: ${Theme.colors.secondary}
+    // }
     
     p {
         font-size: 14px;

@@ -5,6 +5,7 @@ import { S } from "./MainStyles";
 
 
 
+
 export const Main: React.FC = () => {
   return (
     <S.StyledMain id="home">

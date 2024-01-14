@@ -1,10 +1,18 @@
 import styled from "styled-components";
-import {SelectSmall} from "../../components/Select";
+import * as React from "react";
+import {SelectChangeEvent} from "@mui/material/Select";
+
 
 export const Inform = () => {
+	const [lng, setLng] = React.useState('ARM');
+
+	const handleChange = (event: SelectChangeEvent) => {
+		setLng(event.target.value);
+	};
 	return (
+
 		<Info style={{height: '20px', }}>
-			<SelectSmall />
+			{lng}
 		</Info>
 	)
 }

@@ -3,9 +3,9 @@ import { Menu } from "./Menu";
 import { S } from "./HeaderMenuStyle";
 
 export const MobileMenu: React.FC = () => {
-  const [menuIsOpen, setmenuIsOpen] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   const onBtnClick = () => {
-    setmenuIsOpen(!menuIsOpen);
+    setMenuIsOpen(!menuIsOpen);
   };
 
   return (

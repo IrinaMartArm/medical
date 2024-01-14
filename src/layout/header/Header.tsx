@@ -1,11 +1,12 @@
 import React from "react";
 import { S } from "./Header_styles";
-import { Logo } from "../../components/logo/Logo";
 import { Container } from "../../components/Container";
 import { Wrapper } from "../../components/Wrapper";
 import { DesktopMenu } from "./headerMenu/HeaderMenu";
 import { MobileMenu } from "./headerMenu/MobileMenu";
-import {Inform} from "./Inform";
+import {Logo} from "../../components/logo/Logo";
+import {Basis} from "../sections/Basis";
+
 
 
 
@@ -21,16 +22,16 @@ export const Header: React.FC = () => {
 
   return (
     <S.Header>
-      <Container padding={'0 20px 20px 20px'}>
-        <Inform/>
-        <Wrapper justify="space-between" align="center">
-          <Logo aria-label='logo'/>
-          {width < breakpoint ? (
-            <MobileMenu/>
-          ) : (
-            <DesktopMenu/>
-          )}
-        </Wrapper>
+      <Basis/>
+      <Container padding={'0 20px'}>
+          <Wrapper justify={'space-between'}>
+              <Logo aria-label='logo'/>
+              {width < breakpoint ? (
+                  <MobileMenu/>
+              ) : (
+                  <DesktopMenu/>
+              )}
+          </Wrapper>
       </Container>
     </S.Header>
   );

@@ -60,7 +60,9 @@ const DesktopMenu = styled.nav`
     ul {
         display: flex;
         gap: 40px;
-        justify-content: center;
+        justify-content: space-between;
+        max-width: 1140px;
+        width: 100%;
     }
 `;
 
@@ -69,7 +71,7 @@ const DesktopMenu = styled.nav`
 const MobileMenu = styled.nav``;
 const MenuWrapper = styled.div<{ isOpen: boolean }>`
     position: fixed;
-    top: 0;
+    top: 40px;
     bottom: 0;
     right: 0;
     left: 0;
