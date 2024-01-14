@@ -6,6 +6,7 @@ import { DesktopMenu } from "./headerMenu/HeaderMenu";
 import { MobileMenu } from "./headerMenu/MobileMenu";
 import {Logo} from "../../components/logo/Logo";
 import {Basis} from "../sections/Basis";
+import {HeaderTitle} from "./HeaderTitle";
 
 
 
@@ -21,18 +22,24 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <S.Header>
-      <Basis/>
-      <Container padding={'0 20px'}>
-          <Wrapper justify={'space-between'}>
-              <Logo aria-label='logo'/>
-              {width < breakpoint ? (
-                  <MobileMenu/>
-              ) : (
-                  <DesktopMenu/>
-              )}
-          </Wrapper>
-      </Container>
-    </S.Header>
+      <>
+          <S.Navigation>
+              <Basis/>
+              <Container padding={'0 20px'}>
+                  <Wrapper justify={'space-between'}>
+                      <Logo aria-label='logo'/>
+                      {width < breakpoint ? (
+                          <MobileMenu/>
+                      ) : (
+                          <DesktopMenu/>
+                      )}
+                  </Wrapper>
+              </Container>
+          </S.Navigation>
+          <HeaderTitle/>
+      </>
+
   );
 };
+
+

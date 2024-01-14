@@ -4,7 +4,7 @@ import { Theme } from "../../style/Theme";
 const Footer = styled.footer`
   position: relative;
   background-color: ${Theme.colors.secondary};
-  padding: 30px 0;
+  padding: 10px 0;
 `;
 
 const SocialList = styled.ul`
@@ -13,12 +13,16 @@ const SocialList = styled.ul`
   margin: 15px 0;
 `;
 
-const SocialItem = styled.li``;
+const Social = styled.div`
+  display: flex;
+    flex-direction: column;
+    color: white;
+`;
 
-const SocialLink = styled.a`
+const SocialItem = styled.li``
+
+const SocialLink = styled.div`
   border-radius: 50%;
-  /* background-color: ${Theme.colors.accent}; */
-  background-color: rgba(255, 255, 255, 0.1);
   width: 35px;
   height: 35px;
   display: flex;
@@ -27,27 +31,26 @@ const SocialLink = styled.a`
   color: ${Theme.colors.accent};
   transition: ${Theme.animations.transition};
 
-  &:hover {
-    color: ${Theme.colors.white};
-    transform: translateY(-4px);
-    outline: 1px solid ${Theme.colors.accent};
-  }
-
-  &:active {
-    color: ${Theme.colors.primary};
-    background-color: ${Theme.colors.accent};
-  }
+  // &:hover {
+  //   color: ${Theme.colors.white};
+  //   transform: translateY(-4px);
+  // }
+  //
+  // &:active {
+  //   opacity: 0.5;  
+  //   //color: ${Theme.colors.primary};
+  // }
 `;
 
 const Copyright = styled.small`
   opacity: 0.5;
-  font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
 `;
 
-export const S ={
+export const S = {
     Footer,
+    Social,
     SocialItem,
     SocialLink,
     SocialList,

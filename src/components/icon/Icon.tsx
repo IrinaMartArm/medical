@@ -1,5 +1,5 @@
 import React from "react"
-
+import sprite from "./../../images/sprite.svg"
 
 type IconPropsType = {
     iconId: string
@@ -10,6 +10,9 @@ type IconPropsType = {
 
 export const Icon: React.FC<IconPropsType> = (props: IconPropsType) => {
     return ( 
-        <div>logo</div>
+        <svg  width={props.width} height={props.height}>
+            <use xlinkHref={`${sprite}#${props.iconId}`}/>
+        </svg>
     )
 }
+// xlinkHref={`${sprite}#${props.iconId}`}

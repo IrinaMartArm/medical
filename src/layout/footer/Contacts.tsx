@@ -1,6 +1,8 @@
+import styled from "styled-components";
+
 export const Contacts = () => {
 	return (
-		<div style={{display: 'grid'}}>
+		<ContactsBox>
 			<div>
 				tel 94736252552552
 			</div>
@@ -10,7 +12,14 @@ export const Contacts = () => {
 			<div>
 				som text
 			</div>
-		</div>
+		</ContactsBox>
 
 	)
 }
+
+const ContactsBox = styled.div`
+	display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: start;
+`

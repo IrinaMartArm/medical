@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Theme } from "../style/Theme";
 import { font } from "../style/Common";
+import {color} from "framer-motion";
 
 type TitlePropsStyled = {
     margin?: string;

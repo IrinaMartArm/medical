@@ -53,6 +53,7 @@ const Title = styled.h4`
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
+    color: black;
 `
 
 const Text = styled.p`

@@ -6,7 +6,7 @@ const StyledMain = styled.section`
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-color: ${Theme.colors.secondary};
+    //background-color: ${Theme.colors.secondary};
 `
 
 const Hello = styled.span`   

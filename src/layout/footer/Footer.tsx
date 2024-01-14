@@ -7,13 +7,10 @@ import {Contacts} from "./Contacts";
 
 const socialIconsData = [
   {
-    iconId: "in",
+    iconId: "viber",
   },
   {
-    iconId: "gt",
-  },
-  {
-    iconId: "telegram",
+    iconId: "whatsapp",
   },
 ];
 
@@ -22,24 +19,26 @@ export const Footer: React.FC = () => {
     <S.Footer>
       <Wrapper align="center" justify={"space-around"}>
         <Logo />
-        <S.SocialList>
-          {socialIconsData.map((i, index) => {
-            return (
-              <S.SocialItem key={index}>
-                <S.SocialLink>
-                  <Icon
-                    iconId={i.iconId}
-                    width="35px"
-                    height="35px"
-                    viewBox={'0 0 35px 35px'}
-                  />
-                </S.SocialLink>
-              </S.SocialItem>
-            );
-          })}
-        </S.SocialList>
         <Contacts/>
-        <S.Copyright>© some text</S.Copyright>
+        <S.Social>
+          <S.SocialList>
+            {socialIconsData.map((i, index) => {
+              return (
+                  <S.SocialItem key={index}>
+                    <S.SocialLink>
+                      <Icon
+                          iconId={i.iconId}
+                          width="35px"
+                          height="35px"
+                          viewBox={'0 0 35px 35px'}
+                      />
+                    </S.SocialLink>
+                  </S.SocialItem>
+              );
+            })}
+          </S.SocialList>
+          <S.Copyright>© some text</S.Copyright>
+        </S.Social>
       </Wrapper>
     </S.Footer>
   );
