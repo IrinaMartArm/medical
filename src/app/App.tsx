@@ -5,7 +5,7 @@ import {Header} from "../layout/header/Header";
 import {Footer} from "../layout/footer/Footer";
 import {Works} from "../layout/sections/works/Works";
 import {Container} from "../components/Container";
-import '../i18n';
+
 
 
 

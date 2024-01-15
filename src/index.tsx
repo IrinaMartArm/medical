@@ -4,6 +4,7 @@ import './index.css';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import {GlobalStyle} from "./style/GlobalStyle";
+import './config/i18n'
 
 
 const root = ReactDOM.createRoot(
