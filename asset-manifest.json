@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/medical/static/css/main.60d09862.css",
+    "main.js": "/medical/static/js/main.00648402.js",
+    "static/js/27.ad86ec1d.chunk.js": "/medical/static/js/27.ad86ec1d.chunk.js",
+    "static/media/sprite.svg": "/medical/static/media/sprite.5b97adbeb50d0ee069cd243b9dad5f98.svg",
+    "index.html": "/medical/index.html",
+    "static/media/getFetch.cjs": "/medical/static/media/getFetch.40f37ddea2378391108f.cjs"
+  },
+  "entrypoints": [
+    "static/css/main.60d09862.css",
+    "static/js/main.00648402.js"
+  ]
+}
