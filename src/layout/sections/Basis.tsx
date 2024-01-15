@@ -18,9 +18,9 @@ export const Basis = () => {
 };
 
 const StyledBasis = styled.div`
-	border: 1px solid red;
+  //border: 1px solid red;
   padding: 10px 40px;
-  	height: 40px;
+  height: 40px;
   display: flex;
   background-color: gray;
   justify-content: space-between;

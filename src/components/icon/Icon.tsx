@@ -15,4 +15,4 @@ export const Icon: React.FC<IconPropsType> = (props: IconPropsType) => {
         </svg>
     )
 }
-// xlinkHref={`${sprite}#${props.iconId}`}
+

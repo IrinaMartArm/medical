@@ -1,17 +1,20 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import {GlobalStyle} from "./style/GlobalStyle";
 
+
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
 root.render(
 	<React.StrictMode>
-		<GlobalStyle/>
-		<App/>
+		<Suspense fallback={<div></div>}>
+			<GlobalStyle/>
+			<App/>
+		</Suspense>
 	</React.StrictMode>
 );
 

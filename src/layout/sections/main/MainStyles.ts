@@ -44,48 +44,29 @@ const MainTitle = styled.h1`
     }
 `
 
-const Text =styled.p`
+const Text = styled.p`
     ${font({weight: 700, fmax: 20, fmin: 16})};
 ` 
 
-const Photo = styled.img`
-    width: 330px;
-    height: 440px;
-    object-fit: cover;
-    margin-right: 25px;
-
-    @media ${Theme.media.mobile} {
-        width: 300px;
-    }
+const Description = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    border-radius: 3px;
+    border: 1px solid ${Theme.colors.border};
 `
 
-const PhotoFrame = styled.div`
-    position: relative;
-    z-index: 9;
-    margin-top: 25px;
 
-    &::before {
-        content: '';
-        position: absolute;
-        width: 325px;
-        height: 480px;
-        border: 5px solid  ${Theme.colors.accent};
-        top: -20px;
-        left: 30px;
-        z-index: -1;
 
-        @media ${Theme.media.mobile} {
-            width: 300px;
-            height: 440px;
-        }
-    }
-`
 
 export const S = {
     StyledMain,
     MainTitle,
+    Description,
     Hello,
-    Photo,
-    PhotoFrame,
     Text
 }
