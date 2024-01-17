@@ -5,6 +5,7 @@ import {Header} from "../layout/header/Header";
 import {Footer} from "../layout/footer/Footer";
 import {Catalog} from "../layout/sections/Catalog/Catalog";
 import {Container} from "../components/Container";
+import {MainSlider} from "../layout/slider/Slider";
 
 
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
         <Header/>
+        <MainSlider/>
         <Container padding={'0 20px'}>
             <Main/>
             <Catalog/>

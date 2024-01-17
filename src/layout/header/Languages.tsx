@@ -22,7 +22,7 @@ const flag = [
 ];
 
 
-export const Inform = () => {
+export const Languages = () => {
 	const {i18n} = useTranslation();
 	const changeLanguageFn = async (name: string) => {
 		await i18n.changeLanguage(name)
@@ -48,12 +48,8 @@ export const Inform = () => {
 }
 
 const Info = styled.div`
-  height: 20px;
   display: flex;
-  justify-content: end;
-  align-items: center;
-  padding-right: 20px;
   gap: 20px;
-	z-index: 99;
+  z-index: 99;
 `
 

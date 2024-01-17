@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { Theme } from "../../../style/Theme";
 import { Link } from "react-scroll";
+import {font} from "../../../style/Common";
 
 
 const MenuItem = styled.li`
@@ -28,10 +29,10 @@ const Mask = styled.span`
 
 const NavLinks = styled(Link)`
     text-align: center;
-    font-size: 30px;
+    font-size: ${font({ weight: 600, fmax: 28, fmin: 20 })};
     font-weight: 400;
     line-height: 1.2;
-    color: white;
+    color: ${Theme.colors.primary};
 
     &::before {
         content: "";
@@ -57,6 +58,7 @@ const NavLinks = styled(Link)`
 
 
 const DesktopMenu = styled.nav`
+    padding-top: 50px;
     ul {
         display: flex;
         gap: 40px;
@@ -76,7 +78,6 @@ const MenuWrapper = styled.div<{ isOpen: boolean }>`
     right: 0;
     left: 0;
     z-index: 999;
-    background-color: rgba(31, 31, 32, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +87,8 @@ const MenuWrapper = styled.div<{ isOpen: boolean }>`
     ${(props) =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
-            transform: translateY(0);
+            transform: translateY(-10%);
+            background-color: rgba(31, 31, 32, 0.9);
         `}
 
     ul {
