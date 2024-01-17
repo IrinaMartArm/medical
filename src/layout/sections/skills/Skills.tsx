@@ -12,7 +12,7 @@ const data: any = [
 
 export const Skills: React.FC = () => {
   return (
-    <S.Skills id="skills">
+    <S.Skills id="items">
       <Container>
         <Title>About</Title>
         <Wrapper wrap="wrap" gap="30px" justify="space-between">

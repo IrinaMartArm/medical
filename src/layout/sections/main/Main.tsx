@@ -11,7 +11,7 @@ import {useTranslation} from "react-i18next";
 export const Main: React.FC = () => {
     const { t } = useTranslation();
   return (
-    <S.StyledMain id="home">
+    <S.StyledMain id="about">
       <Container>
           <Title>{t("test")}</Title>
         <Wrapper align="center" justify="space-around" gap="40px" wrap="wrap">

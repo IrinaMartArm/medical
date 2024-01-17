@@ -14,7 +14,7 @@ export const MobileMenu: React.FC = () => {
         <span></span>
       </S.Button>
       <S.MenuWrapper isOpen={menuIsOpen}>
-        <Menu />
+        <Menu onBtnClick={onBtnClick}/>
       </S.MenuWrapper>
     </S.MobileMenu>
   );

@@ -84,7 +84,7 @@ export const Catalog: React.FC = () => {
   }
   
   return (
-    <S.Works id="works">
+    <S.Works id="catalog">
       <Container>
         <Title>Products by category</Title>
         <Menu items={worksItems}
