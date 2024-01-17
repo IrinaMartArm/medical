@@ -37,13 +37,13 @@ export const SliderReact = () => {     //className={'swiper-container'}
 };
 
 const SlideImg = styled.img`
-  width: 350px;
-  height: 500px;
+  width: 450px;
+  height: 650px;
 `
 const SliderBox = styled.div`
-  max-width: 1000px;
+  max-width: 1300px;
   width: 100%;
-  height: 550px;
+  height: 750px;
   margin: 100px auto 0;
   //border: 1px solid red;
 `

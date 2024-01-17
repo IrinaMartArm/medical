@@ -51,5 +51,6 @@ const Info = styled.div`
   display: flex;
   gap: 20px;
   z-index: 99;
+  padding-bottom: 55px;
 `
 

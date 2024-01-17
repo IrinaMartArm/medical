@@ -41,8 +41,7 @@ const StyledBasis = styled.div`
 const Logotip = styled.img`
   max-width: 200px;
   width: 100%;
-  height: 90px;
-  //max-height: 80px;
+  height: 80px;
   //border: 1px solid red;
 `
 const LogotipBox = styled.div`
@@ -50,6 +49,7 @@ const LogotipBox = styled.div`
   width: 100%;
   height: 100px;
   max-height: 80px;
+  //border: 1px solid red;
 `
 
 export const S = {

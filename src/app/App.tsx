@@ -5,7 +5,7 @@ import {Header} from "../layout/header/Header";
 import {Footer} from "../layout/footer/Footer";
 import {Catalog} from "../layout/sections/Catalog/Catalog";
 import {Container} from "../components/Container";
-import {MainSlider} from "../layout/slider/Slider";
+import {MainSlider} from "../layout/sections/slider/Slider";
 
 
 

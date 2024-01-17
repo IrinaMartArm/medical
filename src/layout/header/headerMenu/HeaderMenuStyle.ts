@@ -58,7 +58,7 @@ const NavLinks = styled(Link)`
 
 
 const DesktopMenu = styled.nav`
-    padding-top: 50px;
+    //padding-top: 20px;
     ul {
         display: flex;
         gap: 40px;
