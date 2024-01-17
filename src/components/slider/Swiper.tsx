@@ -18,8 +18,7 @@ export const SliderReact = () => {     //className={'swiper-container'}
 				modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
 				spaceBetween={50}
 				slidesPerView={1}
-				navigation
-				effect="fade"
+				navigation={{clickable: true}}
 				// pagination={{clickable: true}}
 				autoplay={{ delay: 2500 }}
 				className={styles.mySwiper}
