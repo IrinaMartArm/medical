@@ -3,11 +3,16 @@ import { S } from "./WorksStyles";
 import { Title } from "../../../components/Title";
 import { Wrapper } from "../../../components/Wrapper";
 import { Menu } from "./Menu";
-import { Work } from "./Work";
+import { Item } from "./Item";
 import { Container } from "../../../components/Container";
 import { StatusType } from "./Menu";
 import { AnimatePresence, motion } from "framer-motion"
 import {v1} from "uuid";
+import i1 from '../../../images/pictures/IDCST-Prsentation.webp'
+import i2 from '../../../images/pictures/Detail-IDCAM-M-2.webp'
+import i3 from '../../../images/pictures/pc1.jpg'
+import i4 from '../../../images/pictures/all-implants-062016-20.webp'
+import i5 from '../../../images/pictures/pink.webp'
 
 const worksItems: Array<{status: StatusType, title: string}> = [
   {
@@ -28,45 +33,50 @@ const worksItems: Array<{status: StatusType, title: string}> = [
   },
 ];
 
-const worksData = [
+const Items = [
   {
     id: v1(),
-    title: "Item",
+    title: "Implant",
     type: "spa",
+    img: i1
   },
   {
     id: v1(),
-    title: "Item",
+    title: "Implant",
     type: "react",
+    img: i2
   },
   {
     id: v1(),
-    title: "Item",
+    title: "Implant",
     type: "react",
+    img: i3
   },
   {
     id: v1(),
-    title: "Item",
+    title: "Implant",
     type: "react",
+    img: i4
   },
   {
     id: v1(),
-    title: "Item",
+    title: "Implant",
     type: "react",
+    img: i5
   },
 ];
 
-export const Works: React.FC = () => {
+export const Catalog: React.FC = () => {
   const [status, setStatus] = useState('all')
-  let filteredWorks = worksData
+  let filteredItems = Items
   if(status === 'landing page') {
-    filteredWorks = worksData.filter(work => work.type === 'landing page')
+    filteredItems = Items.filter(work => work.type === 'landing page')
   }
   if(status === 'react') {
-    filteredWorks = worksData.filter(work => work.type === 'react')
+    filteredItems = Items.filter(work => work.type === 'react')
   }
   if(status === 'spa') {
-    filteredWorks = worksData.filter(work => work.type === 'spa')
+    filteredItems = Items.filter(work => work.type === 'spa')
   }
 
   function changeStatus(value: StatusType) {
@@ -82,15 +92,15 @@ export const Works: React.FC = () => {
               status={status} />
         <Wrapper justify="space-around" wrap="wrap" gap="30px">
           <AnimatePresence>
-            {filteredWorks.map((w) => {
+            {filteredItems.map((el) => {
               return (
                 <motion.div style={{maxWidth: "250px", width: "200px", flexGrow: 1}}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            key={w.id}
+                            key={el.id}
                             layout>
-                  <Work key={w.id} title={w.title} text={''} image={''} />
+                  <Item key={el.id} title={el.title} text={''} image={el.img} />
                 </motion.div>
               );
             })}

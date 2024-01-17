@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Theme } from "../style/Theme";
 import { font } from "../style/Common";
-import {color} from "framer-motion";
+
 
 type TitlePropsStyled = {
     margin?: string;
@@ -11,6 +11,7 @@ export const Title = styled.h2<TitlePropsStyled>`
     letter-spacing: 5px;
     position: relative;
     margin-bottom: 90px;
+    color: ${Theme.colors.secondary};
     ${font({ weight: 600, fmax: 36, fmin: 30 })}
 
     &::before {

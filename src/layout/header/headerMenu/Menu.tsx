@@ -1,26 +1,16 @@
 import React from "react";
 import { S } from "./HeaderMenuStyle";
+import {useTranslation} from "react-i18next";
 
 const items = [
-  {
-    title: "Home",
-    href: "home",
-  },
-  {
-    title: "about",
-    href: "about",
-  },
-  {
-    title: "items",
-    href: "items",
-  },
-  {
-    title: "Contacts",
-    href: "contact",
-  }
+  { id: '1', i18nKey: 'title1',  href: "home" },
+  { id: '2', i18nKey: 'title2', href: "about" },
+  { id: '3', i18nKey: 'title3', href: "items" },
+  { id: '4', i18nKey: 'title4', href: "contact" },
 ];
 
 export const Menu: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <ul>
       {items.map((i, index) => {
@@ -32,7 +22,7 @@ export const Menu: React.FC = () => {
             activeClass="active"
             spy={true}
             >
-              {i.title}
+              {t(i.i18nKey)}
             </S.NavLinks>
           </S.MenuItem>
         );

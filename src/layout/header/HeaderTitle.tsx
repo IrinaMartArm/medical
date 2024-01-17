@@ -8,10 +8,10 @@ export const HeaderTitle: React.FC = () => {
     const { t } = useTranslation('app');
     console.log(t('Welcome to React'))
   return (
-    <S.Header>
+    <S.HeaderTitle>
       <Container padding={'0 20px'}>
           <Wrapper justify={'center'} align={'center'} padding={'200px'} direction={'column'} gap={'50px'}>
-              <h1>{t("title")}</h1>
+              <h1>implant, implantation</h1>
               <S.SmallTitle>
                   <h3>Доставка в день заказа</h3>
                   <h3>Оплата при получении</h3>
@@ -19,23 +19,8 @@ export const HeaderTitle: React.FC = () => {
               </S.SmallTitle>
           </Wrapper>
       </Container>
-    </S.Header>
+    </S.HeaderTitle>
   );
 };
 
 
-
-
-
-
-
-
-
-
-
-
-{/*<S.SmallTitle>*/}
-{/*    <h3>Доставка в день заказа</h3>*/}
-{/*    <h3>Оплата при получении</h3>*/}
-{/*    <h3>Скидки</h3>*/}
-{/*</S.SmallTitle>*/}

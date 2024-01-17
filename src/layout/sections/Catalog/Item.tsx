@@ -8,7 +8,7 @@ type WorkPropsType = {
     text: string
 }
 
-export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
+export const Item: React.FC<WorkPropsType> = (props: WorkPropsType) => {
     return (  
         <S.Work>
             <S.ImgBox>

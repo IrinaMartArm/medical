@@ -6,7 +6,10 @@ import { DesktopMenu } from "./headerMenu/HeaderMenu";
 import { MobileMenu } from "./headerMenu/MobileMenu";
 import {Logo} from "../../components/logo/Logo";
 import {Basis} from "../sections/Basis";
+import {SliderReact} from "../../components/slider/Swiper";
 import {HeaderTitle} from "./HeaderTitle";
+import arrow from '../../images/svg/down-arrow.svg'
+
 
 
 
@@ -22,7 +25,7 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-      <>
+      <S.Header>
           <S.Navigation>
               <Basis/>
               <Container padding={'0 20px'}>
@@ -36,9 +39,10 @@ export const Header: React.FC = () => {
                   </Wrapper>
               </Container>
           </S.Navigation>
+          <SliderReact/>
           <HeaderTitle/>
-      </>
-
+          <S.ArrowDown src={arrow} alt={'down'}/>
+      </S.Header>
   );
 };
 

@@ -3,18 +3,18 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { S } from "./SliderStyle";
 import './../../style/slider.css';
-import { Icon } from '../icon/Icon';
+import p1 from '../../images/pictures/drel.webp'
+import p2 from '../../images/pictures/all-implants-062016-20.png'
 
 type SlidePropsType = {
-  text: string
-
+  text: any
 }
 
-const responsive = {
-    0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
-};
+// const responsive = {
+//     0: { items: 1 },
+//     568: { items: 2 },
+//     1024: { items: 3 },
+// };
 
 const Slide = (props: SlidePropsType) => {
   return (
@@ -25,9 +25,8 @@ const Slide = (props: SlidePropsType) => {
 }
 
 const items = [
-  <Slide text={""}/>,
-  <Slide text={""}/>,
-  <Slide text={""}/>,
+  <Slide text={p1}/>,
+  <Slide text={p2}/>,
     // <div className="item" data-value="1">1</div>,
     // <div className="item" data-value="2">2</div>,
     // <div className="item" data-value="3">3</div>,
@@ -40,11 +39,11 @@ export const Slider: React.FC = () => (
     <AliceCarousel
         mouseTracking
         items={items}
-        responsive={responsive}
-        controlsStrategy="alternate"
-        renderPrevButton={()=>{           //hcanging the arrow
-          return <Icon iconId='code'/>  
-        }}
+        // responsive={responsive}
+        // controlsStrategy="alternate"
+        // renderPrevButton={()=>{           //hcanging the arrow
+        //   return <Icon iconId='code'/>
+        // }}
     />
   </S.Slider>
 );

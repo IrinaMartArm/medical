@@ -86,11 +86,10 @@ const Button = styled.a`
     }
 
     &:active {
-        color: ${Theme.colors.primary};
+        color: ${Theme.colors.accent};
         &::before {
             height: 90%;
             z-index: -1;
-            
         }
     }
 `
@@ -108,11 +107,11 @@ const Menu = styled.nav`
 `;
 
 const List = styled.ul`
-    color: ${Theme.colors.accent};
+    color: ${Theme.colors.secondary};
 `;
 
 const ListItem = styled.li`
-    color: ${Theme.colors.accent};
+    color: ${Theme.colors.secondary};
 `;
 
 const Link = styled.a<{active: boolean}>`

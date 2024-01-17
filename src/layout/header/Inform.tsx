@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import * as React from "react";
-import ru from '../../images/russian-flag.svg'
-import en from '../../images/en-flag.svg'
-import am from '../../images/arm-flag.svg'
+import ru from '../../images/svg/russian-flag.svg'
+import en from '../../images/svg/en-flag.svg'
+import am from '../../images/svg/arm-flag.svg'
 import {useTranslation} from "react-i18next";
 
 

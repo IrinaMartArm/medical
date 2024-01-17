@@ -3,7 +3,7 @@ import './App.css';
 import {Main} from "../layout/sections/main/Main";
 import {Header} from "../layout/header/Header";
 import {Footer} from "../layout/footer/Footer";
-import {Works} from "../layout/sections/works/Works";
+import {Catalog} from "../layout/sections/Catalog/Catalog";
 import {Container} from "../components/Container";
 
 
@@ -16,7 +16,7 @@ function App() {
         <Header/>
         <Container padding={'0 20px'}>
             <Main/>
-            <Works/>
+            <Catalog/>
         </Container>
         <Footer/>
     </div>
