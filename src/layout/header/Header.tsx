@@ -11,7 +11,7 @@ import {HeaderTitle} from "./HeaderTitle";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 1100;
+  const breakpoint = 1140;
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
