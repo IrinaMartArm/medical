@@ -39,15 +39,19 @@ const StyledBasis = styled.div`
   justify-content: flex-end;
 `
 const Logotip = styled.img`
-  top: 25px;
-  left: 100px;
   max-width: 300px;
   width: 100%;
   height: 100px;
   max-height: 80px;
   //border: 1px solid red;
 `
+const LogotipBox = styled.div`
+  max-width: 300px;
+  width: 100%;
+  height: 100px;
+  max-height: 80px;
+`
 
 export const S = {
-	Header, Navigation, SmallTitle, ArrowDown, HeaderTitle, StyledBasis, Logotip
+	Header, Navigation, SmallTitle, ArrowDown, HeaderTitle, StyledBasis, Logotip, LogotipBox
 }

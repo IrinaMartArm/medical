@@ -4,7 +4,7 @@ import { Wrapper } from "../../components/Wrapper";
 import { DesktopMenu } from "./headerMenu/HeaderMenu";
 import { MobileMenu } from "./headerMenu/MobileMenu";
 import {Languages} from "./Languages";
-import logo from '../../images/Group.png'
+import logo from '../../images/svg/wx.svg'
 import {HeaderTitle} from "./HeaderTitle";
 
 
@@ -23,7 +23,10 @@ export const Header: React.FC = () => {
       <S.Header>
           <S.Navigation>
                   <Wrapper justify={'space-between'} maxWidth={'1500px'} padding={'10px'}>
-                      <S.Logotip src={logo} alt={'logo'}/>
+                      <S.LogotipBox>
+                          <S.Logotip src={logo} alt={'logo'}/>
+                      </S.LogotipBox>
+
                       {width < breakpoint ? (
                           <MobileMenu/>
                       ) : (
