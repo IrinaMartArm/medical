@@ -114,7 +114,7 @@ const Button = styled.button<{ isOpen: boolean }>`
         background-color: ${Theme.colors.white};
         position: absolute;
         left: 40px;
-        bottom: 50px;
+        bottom: 40px;
         color: antiquewhite;
 
         ${(props) =>

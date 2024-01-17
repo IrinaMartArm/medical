@@ -11,7 +11,7 @@ import {HeaderTitle} from "./HeaderTitle";
 
 export const Header: React.FC = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 1050;
+  const breakpoint = 1100;
 
   React.useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth);
@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
   return (
       <S.Header>
           <S.Navigation>
-                  <Wrapper justify={'space-between'} maxWidth={'1500px'} padding={'3px'} align={'center'}>
+                  <Wrapper justify={'space-between'} maxWidth={'1500px'} padding={'3px'} align={'center'} gap={'10px'}>
                       <S.LogotipBox>
                           <S.Logotip src={logo} alt={'logo'}/>
                       </S.LogotipBox>

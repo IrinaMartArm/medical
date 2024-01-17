@@ -49,8 +49,11 @@ export const Languages = () => {
 
 const Info = styled.div`
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  max-width: 200px;
+  width: 100%;
+  gap: 10px;
   z-index: 99;
-  padding-bottom: 55px;
+  padding-bottom: 40px;
 `
 

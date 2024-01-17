@@ -41,9 +41,9 @@ const SlideImg = styled.img`
   height: 650px;
 `
 const SliderBox = styled.div`
-  max-width: 1300px;
+  max-width: 1000px;
   width: 100%;
-  height: 750px;
+  height: 650px;
   margin: 100px auto 0;
   //border: 1px solid red;
 `
