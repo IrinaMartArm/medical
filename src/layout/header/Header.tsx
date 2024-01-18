@@ -7,6 +7,7 @@ import {Languages} from "./Languages";
 import logo from '../../images/svg/c.svg'
 import {HeaderTitle} from "./HeaderTitle";
 import {LngSelect} from "./LngSelect";
+import {Logo} from "../../components/logo/Logo";
 
 
 
@@ -24,9 +25,10 @@ export const Header: React.FC = () => {
       <S.Header>
           <S.Navigation>
                   <Wrapper justify={'space-between'} maxWidth={'1500px'} padding={'3px'} align={'center'} gap={'10px'}>
-                      <S.LogotipBox>
-                          <S.Logotip src={logo} alt={'logo'}/>
-                      </S.LogotipBox>
+                      <Logo/>
+                      {/*<S.LogotipBox>*/}
+                      {/*    <S.Logotip src={logo} alt={'logo'}/>*/}
+                      {/*</S.LogotipBox>*/}
 
                       {width < breakpoint ? (
                           <MobileMenu/>

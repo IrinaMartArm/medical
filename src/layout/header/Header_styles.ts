@@ -18,6 +18,10 @@ const Navigation = styled.nav`
   padding: 5px 80px 5px 20px;
   background-color: ${Theme.colors.secondary};
   width: 100%;
+ 
+  // @media ${Theme.media.break} {
+  //   padding: 5px 80px 5px 0;
+  // }
 `;
 const SmallTitle = styled.div`
   display: flex;

@@ -103,10 +103,10 @@ const MenuWrapper = styled.div<{ isOpen: boolean }>`
 
 const Button = styled.button<{ isOpen: boolean }>`
     position: fixed;
-    width: 200px;
-    height: 200px;
-    top: -110px;
-    right: -100px;
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    right: 0;
     z-index: 9999;
 
     span {
