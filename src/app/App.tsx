@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Main} from "../layout/sections/main/Main";
+import {Main} from "../layout/sections/about/Main";
 import {Header} from "../layout/header/Header";
 import {Footer} from "../layout/footer/Footer";
 import {Catalog} from "../layout/sections/Catalog/Catalog";

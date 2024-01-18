@@ -7,7 +7,7 @@ export const MainSlider = () => {
 	return (
 		<div>
 			<SliderReact/>
-			<S.ArrowDown src={arrow} alt={'down'}/>
+			{/*<S.ArrowDown src={arrow} alt={'down'}/>*/}
 		</div>
 	);
 }

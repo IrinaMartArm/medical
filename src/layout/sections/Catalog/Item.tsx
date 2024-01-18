@@ -17,7 +17,7 @@ export const Item: React.FC<WorkPropsType> = (props: WorkPropsType) => {
             <S.Box>
                 <S.Title>{props.title}</S.Title>
                 <S.Text>{props.text}</S.Text>
-                <S.Button>Demo</S.Button>
+                {/*<S.Button>Demo</S.Button>*/}
             </S.Box>            
         </S.Work>
     );

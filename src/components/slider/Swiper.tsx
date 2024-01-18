@@ -10,6 +10,7 @@ import p1 from '../../images/pictures/pc1.jpg'
 import p2 from '../../images/pictures/pc2.jpg'
 import styled from "styled-components";
 import styles from './Swiper.module.css'
+import {Theme} from "../../style/Theme";
 
 export const SliderReact = () => {     //className={'swiper-container'}
 	return (
@@ -45,5 +46,8 @@ const SliderBox = styled.div`
   width: 100%;
   height: 650px;
   margin: 100px auto 0;
-  //border: 1px solid red;
+  
+  @media ${Theme.media.break} {
+    margin: 10px auto 0;
+  }
 `

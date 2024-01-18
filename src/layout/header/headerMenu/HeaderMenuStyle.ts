@@ -70,7 +70,9 @@ const DesktopMenu = styled.nav`
 
 
 
-const MobileMenu = styled.nav``;
+const MobileMenu = styled.nav`
+  
+`;
 const MenuWrapper = styled.div<{ isOpen: boolean }>`
     position: fixed;
     top: 40px;
