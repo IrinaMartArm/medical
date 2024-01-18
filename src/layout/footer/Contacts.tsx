@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import { S } from "./FooterStyle";
 
 export const Contacts = () => {
 	return (
-		<ContactsBox>
+		<S.ContactsBox>
 			<div>
 				tel 94736252552552
 			</div>
@@ -12,14 +12,7 @@ export const Contacts = () => {
 			<div>
 				som text
 			</div>
-		</ContactsBox>
-
+		</S.ContactsBox>
 	)
 }
 
-const ContactsBox = styled.div`
-	display: flex;
-  flex-direction: column;
-  color: white;
-  align-items: start;
-`

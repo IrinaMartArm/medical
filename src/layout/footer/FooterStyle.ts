@@ -5,7 +5,6 @@ const Footer = styled.footer`
   position: relative;
   background-color: ${Theme.colors.secondary};
   padding: 10px 0;
-  border: 1px solid red;
 `;
 
 const FooterWrapper = styled.div`
@@ -20,7 +19,21 @@ const FooterWrapper = styled.div`
   
   @media (max-width: 500px) {
     flex-direction: column;
-    
+	gap: 15px;
+  }
+`
+const LogoBox =styled.div`
+  @media (max-width: 500px) {
+    display: none;
+  }
+`
+const ContactsBox = styled.div`
+	display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: start;
+  @media (max-width: 500px) {
+    align-items: center;
   }
 `
 
@@ -68,6 +81,8 @@ const Copyright = styled.small`
 
 export const S = {
 	Footer,
+	LogoBox,
+	ContactsBox,
 	Social,
 	SocialItem,
 	SocialLink,
