@@ -83,7 +83,7 @@ const MenuWrapper = styled.div<{ isOpen: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-100%);
+    transform: translateY(-120%);
     transition: .5s ease-in;
 
     ${(props) =>
