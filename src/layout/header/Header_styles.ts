@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Theme} from "../../style/Theme";
+import {font} from "../../style/Common";
 
 
 const Header = styled.header`
@@ -55,7 +56,14 @@ const LogotipBox = styled.div`
   max-height: 80px;
   //border: 1px solid red;
 `
+const StyledSelect = styled.select`
+	background-color: ${Theme.colors.secondary};
+  color: ${Theme.colors.primary};
+  padding: 5px;
+  font-family: Alegreya Sans SC,serif;
+  font-size: ${font({ weight: 400, fmax: 20, fmin: 14 })};
+`
 
 export const S = {
-	Header, Navigation, SmallTitle, ArrowDown, HeaderTitle, StyledBasis, Logotip, LogotipBox
+	Header, Navigation, SmallTitle, ArrowDown, HeaderTitle, StyledBasis, Logotip, LogotipBox, StyledSelect
 }

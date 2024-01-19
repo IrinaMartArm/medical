@@ -1,6 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
-import {Theme} from "../../style/Theme";
+import { S } from "./Header_styles";
 import {useTranslation} from "react-i18next";
 
 export const  LngSelect = () => {
@@ -11,16 +10,11 @@ export const  LngSelect = () => {
 	}
 
 	return (
-		<StyledSelect onChange={(e) => changeLanguageFn(e.currentTarget.value)}>
+		<S.StyledSelect onChange={(e) => changeLanguageFn(e.currentTarget.value)}>
 			<option value={'ru'}>russian</option>
 			<option value={'en'}>english</option>
 			<option value={'am'}>armenian</option>
-		</StyledSelect>
+		</S.StyledSelect>
 	);
 }
 
-const StyledSelect = styled.select`
-	background-color: ${Theme.colors.secondary};
-  color: ${Theme.colors.primary};
-  padding: 5px;
-`

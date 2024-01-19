@@ -29,6 +29,7 @@ const Mask = styled.span`
 
 const NavLinks = styled(Link)`
     text-align: center;
+    font-family: Alegreya Sans SC, sans-serif;
     font-size: ${font({ weight: 600, fmax: 28, fmin: 20 })};
     font-weight: 400;
     line-height: 1.2;
