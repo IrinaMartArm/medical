@@ -45,7 +45,7 @@ const SliderBox = styled.div`
   max-width: 1000px;
   width: 100%;
   height: 650px;
-  margin: 100px auto 0;
+  margin: 80px auto 0;
   
   @media ${Theme.media.break} {
     margin: 10px auto 0;

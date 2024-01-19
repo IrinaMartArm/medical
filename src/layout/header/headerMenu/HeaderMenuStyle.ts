@@ -28,32 +28,33 @@ const Mask = styled.span`
 `;
 
 const NavLinks = styled(Link)`
-    text-align: center;
-    font-family: Alegreya Sans SC, sans-serif;
-    font-size: ${font({ weight: 600, fmax: 28, fmin: 20 })};
-    font-weight: 400;
-    line-height: 1.2;
-    color: ${Theme.colors.primary};
+  text-align: center;
+  font-family: Alegreya Sans SC, sans-serif;
+  font-size: ${font({weight: 600, fmax: 28, fmin: 20})};
+  font-weight: 400;
+  line-height: 1.2;
+  color: ${Theme.colors.primary};
 
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    right: -10px;
+    z-index: 2;
+    transform: scale(0);
+    transition: ${Theme.animations.transition};
+  }
+
+  &:hover, &.active {
     &::before {
-        content: "";
-        display: inline-block;
-        height: 2px;
-        background-color: transparent;
-        position: absolute;
-        bottom: 0;
-        left: -10px;
-        right: -10px;
-        z-index: 2;
-        transform: scale(0);
-        transition: ${Theme.animations.transition};
+      transform: scale(1);
+      background-color: ${Theme.colors.accent};
     }
-    &:hover, &.active {
-        &::before {
-        transform: scale(1);
-            background-color: ${Theme.colors.accent};
-        }
-    }
+  }
 `;
 
 
@@ -76,7 +77,7 @@ const MobileMenu = styled.nav`
 `;
 const MenuWrapper = styled.div<{ isOpen: boolean }>`
     position: fixed;
-    top: 40px;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
@@ -103,7 +104,7 @@ const MenuWrapper = styled.div<{ isOpen: boolean }>`
 `;
 
 const Button = styled.button<{ isOpen: boolean }>`
-    position: fixed;
+    position: absolute;
     width: 100px;
     height: 100px;
     top: -10px;

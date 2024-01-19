@@ -34,12 +34,6 @@ export const Languages = () => {
 				return (
 					<button key={index} onClick={() => changeLanguageFn(el.iconId)}>
 						<img src={el.name} alt={el.iconId} width={40}/>
-						{/*<Icon*/}
-						{/*	iconId={el.iconId}*/}
-						{/*	width="40px"*/}
-						{/*	height="33px"*/}
-						{/*	viewBox={'0 0 40px 35px'}*/}
-						{/*/>*/}
 					</button>
 				)
 			})}
@@ -50,7 +44,7 @@ export const Languages = () => {
 const Info = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 200px;
+  max-width: 170px;
   width: 100%;
   gap: 10px;
   z-index: 99;
