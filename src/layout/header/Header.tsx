@@ -27,17 +27,13 @@ export const Header: React.FC = () => {
           <S.Navigation>
                   <Wrapper justify={'space-between'} maxWidth={'1500px'} padding={'3px'} align={'center'} gap={'10px'}>
                       <Logo/>
-                      {/*<S.LogotipBox>*/}
-                      {/*    <S.Logotip src={logo} alt={'logo'}/>*/}
-                      {/*</S.LogotipBox>*/}
-
                       {width < breakpoint ? (
                           <MobileMenu/>
                       ) : (
                           <DesktopMenu/>
                       )}
-                      <LngSelect/>
-                      {/*<Languages/>*/}
+                      {/*<LngSelect/>*/}
+                      <Languages/>
                   </Wrapper>
           </S.Navigation>
           <HeaderTitle/>

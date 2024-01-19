@@ -4,6 +4,7 @@ import { Container } from "../../../components/Container";
 import { S } from "./MainStyles";
 import {Title} from "../../../components/Title";
 import {useTranslation} from "react-i18next";
+import {Vidios} from "./Vidios";
 
 
 
@@ -15,6 +16,7 @@ export const Main: React.FC = () => {
       <Container>
           <Title>{t("test")}</Title>
         <Wrapper align="center" justify="space-around" gap="40px" wrap="wrap">
+            <Vidios/>
           <S.Description>
             Best quality
           </S.Description>

@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import * as React from "react";
-import ru from '../../images/svg/russian-flag.svg'
-import en from '../../images/svg/en-flag.svg'
-import am from '../../images/svg/arm-flag.svg'
+import ru from '../../images/pictures/rus.png'
+import en from '../../images/pictures/en-flag 1.png'
+import am from '../../images/pictures/arm-flag 1.png'
 import {useTranslation} from "react-i18next";
 
 
 const flag = [
+	{
+		iconId: 'am',
+		name: am
+	},
 	{
 		iconId: 'en',
 		name: en
@@ -14,10 +18,6 @@ const flag = [
 	{
 		iconId: 'ru',
 		name: ru
-	},
-	{
-		iconId: 'am',
-		name: am
 	},
 ];
 
