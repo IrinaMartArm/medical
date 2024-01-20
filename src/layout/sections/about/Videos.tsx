@@ -21,12 +21,12 @@ export const Videos = () => {
 
 const MobileVideos = () => {
 	return (
-		<iframe width="360" height="202" src="https://www.youtube.com/embed/2mgn_ouqs7A?si=GVSf2WP-M9EZKXsi" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+		<iframe width="360" height="202" src="https://www.youtube.com/embed/jm4q7_nbJ88?si=ENsWaubqrkRWZwGc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 	)
 }
 
 const DesktopVideos = () => {
 	return (
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/2mgn_ouqs7A?si=GVSf2WP-M9EZKXsi" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/jm4q7_nbJ88?si=ENsWaubqrkRWZwGc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 	)
 }
