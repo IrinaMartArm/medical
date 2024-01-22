@@ -6,8 +6,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import p1 from '../../images/pictures/pc1.jpg'
-import p2 from '../../images/pictures/pc2.jpg'
+import p1 from '../../images/pictures/Screenshot 2024-01-18 at 15.42.19 copy.png'
+import p2 from '../../images/pictures/Screenshot 2024-01-18 at 15.43.13 copy.png'
+import p3 from '../../images/pictures/Screenshot 2024-01-18 at 15.44.32 copy.png'
 import styled from "styled-components";
 import styles from './Swiper.module.css'
 import {Theme} from "../../style/Theme";
@@ -28,6 +29,9 @@ export const SliderReact = () => {     //className={'swiper-container'}
 					<SlideImg src={p1}/>
 				</SwiperSlide>
 				<SwiperSlide><SlideImg src={p2}/></SwiperSlide>
+				<SwiperSlide>
+					<SlideImg src={p3}/>
+				</SwiperSlide>
 				{/*<div className={`${styles.custom_swipera}`}></div>*/}
 				<div className={`swiper-button-prev ${styles.custom_swiper}`}></div>
 				<div className={`swiper-button-next ${styles.custom_swiper}`}></div>
@@ -38,14 +42,14 @@ export const SliderReact = () => {     //className={'swiper-container'}
 };
 
 const SlideImg = styled.img`
-  width: 450px;
-  height: 650px;
+  
+  width: 100%;
 `
 const SliderBox = styled.div`
-  max-width: 1000px;
+  max-width: 1900px;
   width: 100%;
-  height: 650px;
-  margin: 80px auto 0;
+  //height: 650px;
+  margin: 30px auto 0;
   
   @media ${Theme.media.break} {
     margin: 10px auto 0;
