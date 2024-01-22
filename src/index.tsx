@@ -5,6 +5,7 @@ import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import {GlobalStyle} from "./style/GlobalStyle";
 import './config/i18n'
+import {BrowserRouter} from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(
@@ -12,10 +13,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
 	<React.StrictMode>
-		<Suspense fallback={<div></div>}>
-			<GlobalStyle/>
-			<App/>
-		</Suspense>
+		<BrowserRouter>
+			<Suspense fallback={<div></div>}>
+				<GlobalStyle/>
+				<App/>
+			</Suspense>
+		</BrowserRouter>
 	</React.StrictMode>
 );
 

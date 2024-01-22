@@ -13,6 +13,7 @@ import i2 from '../../../images/pictures/Detail-IDCAM-M-2.webp'
 import i3 from '../../../images/pictures/pc1.jpg'
 import i4 from '../../../images/pictures/all-implants-062016-20.webp'
 import i5 from '../../../images/pictures/pink.webp'
+import {NavLink, Route, Routes} from "react-router-dom";
 
 const worksItems: Array<{status: StatusType, title: string}> = [
   {
@@ -87,9 +88,10 @@ export const Catalog: React.FC = () => {
     <S.Works id="catalog">
       <Container>
         <Title>Products by category</Title>
-        <Menu items={worksItems}
-              changeStatus={changeStatus}
-              status={status} />
+        {/*<Menu items={worksItems}*/}
+        {/*      changeStatus={changeStatus}*/}
+        {/*      status={status} */}
+        {/*/>*/}
         <Wrapper justify="space-around" wrap="wrap" gap="30px">
           <AnimatePresence>
             {filteredItems.map((el) => {
@@ -100,7 +102,9 @@ export const Catalog: React.FC = () => {
                             exit={{ opacity: 0 }}
                             key={el.id}
                             layout>
-                  <Item key={el.id} title={el.title} text={''} image={el.img} />
+                  <NavLink to={'/id3'}>
+                    <Item key={el.id} title={el.title} text={''} image={el.img} />
+                  </NavLink>
                 </motion.div>
               );
             })}
