@@ -9,9 +9,6 @@ export const Footer: React.FC = () => {
   return (
     <S.Footer>
           <S.FooterWrapper>
-              <S.LogoBox>
-                  <Logo/>
-              </S.LogoBox>
               <Contacts/>
               <Messengers/>
           </S.FooterWrapper>

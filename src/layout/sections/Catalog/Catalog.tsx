@@ -9,7 +9,7 @@ import { StatusType } from "./Menu";
 import { AnimatePresence, motion } from "framer-motion"
 import {v1} from "uuid";
 import i1 from '../../../images/pictures/IDCST-Prsentation.webp'
-import i2 from '../../../images/pictures/Detail-IDCAM-M-2.webp'
+import id3 from '../../../images/pictures/id3.jpg'
 import i3 from '../../../images/pictures/pc1.jpg'
 import i4 from '../../../images/pictures/all-implants-062016-20.webp'
 import i5 from '../../../images/pictures/pink.webp'
@@ -37,32 +37,37 @@ const worksItems: Array<{status: StatusType, title: string}> = [
 const Items = [
   {
     id: v1(),
-    title: "Implant",
+    title: "ID CAM",
     type: "spa",
+    path: "/ID_CAM",
     img: i1
   },
   {
     id: v1(),
-    title: "Implant",
+    title: "ID 3",
     type: "react",
-    img: i2
+    path: "/ID3",
+    img: id3
   },
   {
     id: v1(),
     title: "Implant",
     type: "react",
+    path: "/id3",
     img: i3
   },
   {
     id: v1(),
     title: "Implant",
     type: "react",
+    path: "/id3",
     img: i4
   },
   {
     id: v1(),
     title: "Implant",
     type: "react",
+    path: "/id3",
     img: i5
   },
 ];
@@ -102,7 +107,7 @@ export const Catalog: React.FC = () => {
                             exit={{ opacity: 0 }}
                             key={el.id}
                             layout>
-                  <NavLink to={'/id3'}>
+                  <NavLink to={el.path}>
                     <Item key={el.id} title={el.title} text={''} image={el.img} />
                   </NavLink>
                 </motion.div>

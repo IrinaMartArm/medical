@@ -42,13 +42,11 @@ export const SliderReact = () => {     //className={'swiper-container'}
 };
 
 const SlideImg = styled.img`
-  
   width: 100%;
 `
 const SliderBox = styled.div`
   max-width: 1900px;
   width: 100%;
-  //height: 650px;
   margin: 30px auto 0;
   
   @media ${Theme.media.break} {
