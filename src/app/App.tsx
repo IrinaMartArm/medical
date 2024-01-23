@@ -6,6 +6,7 @@ import {Route, Routes} from "react-router-dom";
 import {Idcam} from "../layout/sections/Catalog/products/Idcam";
 import {MainAge} from "../layout/main/MainAge";
 import {Id3} from "../layout/sections/Catalog/products/Id3";
+import {GoTop} from "../components/goTop/GoTop";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 					<Route path="*" element={<h1>404: PAGE NOT FOUND</h1>}/>
 				</Routes>
 			</div>
+			<GoTop/>
 			<Footer/>
 		</div>
 	);

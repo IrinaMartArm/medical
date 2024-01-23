@@ -38,15 +38,17 @@ const Box = styled.div`
     padding-top: 25px;
     text-align: start;
 `
-const ImgBox = styled.div`    
-    background-color: rgba(0, 0, 0, 0.20); 
+const ImgBox = styled.div`
+    //max-width: 250px;
+    //width: 100%;
+    //height: 200px;
 `
     
 const Image = styled.img`
     width: 100%;
-    /* height: 260px; */
+   height: 300px;
     object-fit: cover;
-    border-radius: 2%; 
+    border-radius: 3px; 
 `
 
 const Title = styled.h4`

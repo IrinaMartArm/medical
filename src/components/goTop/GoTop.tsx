@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Icon } from "../icon/Icon";
+import up from '../../images/svg/up-arrow-svgrepo-com.svg'
 import { animateScroll } from "react-scroll";
 
 export const GoTop = () => {
@@ -20,7 +20,7 @@ export const GoTop = () => {
         <>
         {show && (
             <GoTopBtn onClick={()=>{animateScroll.scrollToTop()}}>
-                <Icon iconId="top" width="30px" height="30px"/>
+                <StyledImg src={up} alt={'up'}/>
             </GoTopBtn>)}
         </>     
     );
@@ -28,8 +28,12 @@ export const GoTop = () => {
 
 const GoTopBtn = styled.button`
     position: fixed;
-    bottom: 30px;
+    bottom: 150px;
     right: 30px;
+`
+const StyledImg = styled.img`
+  width: 50px;
+    height: 50px;
 `
 
 
