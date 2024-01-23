@@ -2,30 +2,31 @@ import styled, { css } from "styled-components";
 import { Theme } from "../../../style/Theme";
 import { Link } from "react-scroll";
 import {font} from "../../../style/Common";
+import {NavLink} from "react-router-dom";
 
 
 const MenuItem = styled.li`
     position: relative;
 `;
 
-const Mask = styled.span`
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: ${Theme.colors.accent};
-    display: inline-block;
-    height: 50%;
-    overflow: hidden;
-    transition: ${Theme.animations.transition};
-
-    & + & {
-        top: 50%;
-        span {
-        display: inline-block;
-        transform: translateY(-50%);
-        }
-    }
-`;
+// const Mask = styled.span`
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     color: ${Theme.colors.accent};
+//     display: inline-block;
+//     height: 50%;
+//     overflow: hidden;
+//     transition: ${Theme.animations.transition};
+//
+//     & + & {
+//         top: 50%;
+//         span {
+//         display: inline-block;
+//         transform: translateY(-50%);
+//         }
+//     }
+// `;
 
 const NavLinks = styled(Link)`
   text-align: center;
@@ -57,6 +58,35 @@ const NavLinks = styled(Link)`
   }
 `;
 
+const HomeLink = styled(NavLink)`
+    text-align: center;
+    font-family: Alegreya Sans SC, sans-serif;
+    font-size: ${font({weight: 600, fmax: 28, fmin: 20})};
+    font-weight: 400;
+    line-height: 1.2;
+    color: ${Theme.colors.primary};
+
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        background-color: transparent;
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        right: -10px;
+        z-index: 2;
+        transform: scale(0);
+        transition: ${Theme.animations.transition};
+    }
+
+    &:hover, &.active {
+        &::before {
+            transform: scale(1);
+            background-color: ${Theme.colors.accent};
+        }
+    }
+`
 
 
 const DesktopMenu = styled.nav`
@@ -163,9 +193,10 @@ const Button = styled.button<{ isOpen: boolean }>`
 
 
 export const S = {
-    NavLinks, 
+    NavLinks,
+    HomeLink,
     MenuItem, 
-    Mask, 
+    // Mask,
     DesktopMenu,  
     MobileMenu,  
     MenuWrapper, 
