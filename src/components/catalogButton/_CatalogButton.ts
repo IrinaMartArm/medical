@@ -13,6 +13,7 @@ const MenuWrapper = styled.nav<{ isOpen: boolean }>`
   top: 50px;
   min-width: 150px;
   border-radius: 4px;
+  z-index: 999;
   border: 1px solid black;
   background-color: ${Theme.colors.primary};
 
@@ -53,7 +54,6 @@ const CatalogItems = styled.ul`
   flex-direction: column;
   align-items: start;
   padding: 15px;
- 
 `
 
 const CatalogItem = styled.li`

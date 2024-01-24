@@ -1,4 +1,4 @@
-import React, { MouseEvent} from "react";
+import React, { MouseEvent } from "react";
 
 import { animateScroll } from "react-scroll";
 import logo from "../../images/svg/c.svg";

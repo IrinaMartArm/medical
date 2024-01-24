@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, MouseEvent} from "react";
 import {S} from './_CatalogButton'
 import {useTranslation} from "react-i18next";
 
@@ -10,9 +10,14 @@ export const CatalogButton = () => {
 		setIsOpen(!isOpen);
 	};
 
+	const buttonHandler = (e:MouseEvent<HTMLButtonElement>) => {
+		e.stopPropagation()
+		setIsOpen(!isOpen);
+	}
+
 	return (
 		<S.CatalogBtnBox onBlur={onBtnClick}>
-			<S.Button onClick={onBtnClick}>
+			<S.Button onClick={buttonHandler}>
 				{t('title3')}
 			</S.Button>
 			<S.MenuWrapper isOpen={isOpen}>
