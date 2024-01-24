@@ -1,7 +1,7 @@
 import React from 'react';
 import {MainSlider} from "../sections/slider/Slider";
 import {Container} from "../../components/Container";
-import {Catalog} from "../sections/Catalog/Catalog";
+import {Catalog} from "./Catalog/Catalog";
 import {Main} from "../sections/about/Main";
 
 export const MainAge = () => {

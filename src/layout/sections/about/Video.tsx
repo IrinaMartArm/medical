@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-export const Videos = () => {
+export const Video = () => {
 	const [width, setWidth] = useState(window.innerWidth)
 	const breakPoint = 540
 	useEffect(() => {

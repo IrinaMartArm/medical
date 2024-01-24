@@ -3,9 +3,9 @@ import './App.css';
 import {Header} from "../layout/header/Header";
 import {Footer} from "../layout/footer/Footer";
 import {Route, Routes} from "react-router-dom";
-import {Idcam} from "../layout/sections/Catalog/products/Idcam";
+import {Idcam} from "../layout/main/Catalog/products/Idcam";
 import {MainAge} from "../layout/main/MainAge";
-import {Id3} from "../layout/sections/Catalog/products/Id3";
+import {Id3} from "../layout/main/Catalog/products/Id3";
 import {GoTop} from "../components/goTop/GoTop";
 
 

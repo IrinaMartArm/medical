@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+import styled from "styled-components";
+import {Theme} from "../style/Theme";
+import {font} from "../style/Common";
 
 type DropdownProps = {
 	options: string[];
 	onSelect: (option: string) => void;
 };
 
-const Dropdown: React.FC<DropdownProps> = ({ options, onSelect }) => {
+const Dropdown: React.FC<DropdownProps> = ({options, onSelect}) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
@@ -28,7 +31,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onSelect }) => {
 						<li
 							key={index}
 							onClick={() => handleOptionClick(option)}
-							style={{ cursor: 'pointer' }}
+							style={{cursor: 'pointer'}}
 						>
 							{option}
 						</li>
@@ -52,7 +55,10 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Пример выпадающего меню</h1>
-			<Dropdown options={options} onSelect={handleSelect} />
+			<Dropdown options={options} onSelect={handleSelect}/>
 		</div>
 	);
 }
+
+
+

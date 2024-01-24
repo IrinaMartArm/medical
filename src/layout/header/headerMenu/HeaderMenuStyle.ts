@@ -9,25 +9,6 @@ const MenuItem = styled.li`
     position: relative;
 `;
 
-// const Mask = styled.span`
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     color: ${Theme.colors.accent};
-//     display: inline-block;
-//     height: 50%;
-//     overflow: hidden;
-//     transition: ${Theme.animations.transition};
-//
-//     & + & {
-//         top: 50%;
-//         span {
-//         display: inline-block;
-//         transform: translateY(-50%);
-//         }
-//     }
-// `;
-
 const NavLinks = styled(Link)`
   text-align: center;
   font-family: Alegreya Sans SC, sans-serif;
@@ -65,6 +46,7 @@ const HomeLink = styled(NavLink)`
     font-weight: 400;
     line-height: 1.2;
     color: ${Theme.colors.primary};
+    
 
     &::before {
         content: "";
@@ -195,8 +177,7 @@ const Button = styled.button<{ isOpen: boolean }>`
 export const S = {
     NavLinks,
     HomeLink,
-    MenuItem, 
-    // Mask,
+    MenuItem,
     DesktopMenu,  
     MobileMenu,  
     MenuWrapper, 
