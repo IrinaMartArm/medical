@@ -9,7 +9,7 @@ const DescriptionBox = styled.div`
   display: flex;
   max-width: 1200px;
   width: 100%;
-	padding: 20px;
+  padding: 20px;
   margin: 40px auto;
   border: 1px solid ${Theme.colors.border};
   background-color: white;
@@ -28,7 +28,9 @@ const SmallImg = styled.img`
 const TextBox = styled.div`
   display: flex;
   width: 100%;
-  
+`
+const VideoBox = styled.div`
+  margin: 0 10px;
 `
 const Title = styled.h2`
   ${font({weight: 500, fmax: 50, fmin: 24})};

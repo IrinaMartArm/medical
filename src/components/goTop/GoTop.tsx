@@ -32,6 +32,7 @@ const GoTopBtn = styled.button`
   position: fixed;
   bottom: 140px;
   right: 30px;
+  z-index: 999;
 `
 const StyledImg = styled.img`
   width: 30px;

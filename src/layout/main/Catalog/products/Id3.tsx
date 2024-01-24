@@ -8,7 +8,7 @@ import {Container} from "../../../../components/Container";
 
 export const Id3 = () => {
 	const [width, setWidth] = useState(window.innerWidth)
-	const breakPoint = 540
+	const breakPoint = 580
 	useEffect(() => {
 		const handleResize = () => setWidth(window.innerWidth)
 		window.addEventListener('resize', handleResize)
