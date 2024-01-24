@@ -18,6 +18,7 @@ const Work = styled(motion.div)`
     transition: 0.2s ease-in;
     padding: 20px;
     border-radius: 2%;
+    background-color: white;
 
     /* &:hover {
         outline: 2px solid ${Theme.colors.accent};

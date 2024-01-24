@@ -8,12 +8,14 @@ type WrapperPropsType = {
     gap?: string
     padding?: string
     maxWidth?: string
+    minWidth?: string
 }
 
 export const Wrapper = styled.div<WrapperPropsType>`
     display: flex;
     width: 100%;
     max-width: ${props=>props.maxWidth || '1200px'};
+    min-width: ${props=>props.minWidth || ''};
     flex-direction: ${props=>props.direction || 'row'};
     justify-content:  ${props=>props.justify || 'flex-start'};
     align-items: ${props=>props.align || 'stretch'};

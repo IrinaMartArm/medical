@@ -2,11 +2,9 @@ import React from "react";
 import { S } from "./Header_styles";
 import { Container } from "../../components/Container";
 import { Wrapper } from "../../components/Wrapper";
-import { useTranslation } from 'react-i18next';
 
 export const HeaderTitle: React.FC = () => {
-    const { t } = useTranslation('app');
-    console.log(t('Welcome to React'))
+
   return (
     <S.HeaderTitle>
       <Container padding={'0 20px'}>

@@ -6,6 +6,7 @@ const IdcamBox = styled.div`
 `
 const BigImg = styled.img`
 	width: 100%;
+   min-height: 200px;
 `
 const SmallImgBox = styled.div`
 	max-width: 300px;
@@ -13,6 +14,11 @@ const SmallImgBox = styled.div`
 `
 const SmallImg = styled.img`
   width: 100%;
+`
+const TextBox = styled.div`
+  display: flex;
+  width: 100%;
+  
 `
 const Title = styled.h2`
   ${font({weight: 500, fmax: 50, fmin: 24})};
@@ -22,5 +28,5 @@ const Text = styled.p`
 `
 
 export const S = {
-  IdcamBox, BigImg, SmallImg, Text, Title, SmallImgBox
+  IdcamBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox
 }
