@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import id3 from '../../../../images/pictures/id3.jpg'
-import p1 from '../../../../images/pictures/Screenshot 2024-01-18 at 15.44.32 copy.png'
+import id3 from '../../../../images/pictures/id3.webp'
+import p1 from '../../../../images/pictures/ID3big.webp'
 import {Wrapper} from "../../../../components/Wrapper";
 import {S} from './_ProductStyles'
 import {Container} from "../../../../components/Container";

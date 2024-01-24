@@ -2,37 +2,35 @@ import React, { useState } from "react";
 import { S } from "./WorksStyles";
 import { Title } from "../../../components/Title";
 import { Wrapper } from "../../../components/Wrapper";
-import { Menu } from "./Menu";
 import { Item } from "./Item";
 import { Container } from "../../../components/Container";
 import { StatusType } from "./Menu";
 import { AnimatePresence, motion } from "framer-motion"
 import {v1} from "uuid";
 import i1 from '../../../images/pictures/IDCST-Prsentation.webp'
-import id3 from '../../../images/pictures/id3.jpg'
-import i3 from '../../../images/pictures/pc1.jpg'
+import id3 from '../../../images/pictures/id3.webp'
 import i4 from '../../../images/pictures/all-implants-062016-20.webp'
 import i5 from '../../../images/pictures/pink.webp'
-import {NavLink, Route, Routes} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
-const worksItems: Array<{status: StatusType, title: string}> = [
-  {
-    title: 'All',
-    status: 'all'
-  },
-  {
-    title: 'Item',
-    status: 'landing page'
-  },
-  {
-    title: 'Item',
-    status: 'react'
-  },
-  {
-    title: 'Item',
-    status: 'spa'
-  },
-];
+// const worksItems: Array<{status: StatusType, title: string}> = [
+//   {
+//     title: 'All',
+//     status: 'all'
+//   },
+//   {
+//     title: 'Item',
+//     status: 'landing page'
+//   },
+//   {
+//     title: 'Item',
+//     status: 'react'
+//   },
+//   {
+//     title: 'Item',
+//     status: 'spa'
+//   },
+// ];
 
 const Items = [
   {
@@ -48,13 +46,6 @@ const Items = [
     type: "react",
     path: "/ID3",
     img: id3
-  },
-  {
-    id: v1(),
-    title: "Implant",
-    type: "react",
-    path: "/id3",
-    img: i3
   },
   {
     id: v1(),
@@ -85,9 +76,9 @@ export const Catalog: React.FC = () => {
     filteredItems = Items.filter(work => work.type === 'spa')
   }
 
-  function changeStatus(value: StatusType) {
-    setStatus(value)
-  }
+  // function changeStatus(value: StatusType) {
+  //   setStatus(value)
+  // }
   
   return (
     <S.Works id="catalog">

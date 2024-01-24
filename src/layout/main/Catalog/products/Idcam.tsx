@@ -1,8 +1,8 @@
 import React from 'react';
 import {Container} from "../../../../components/Container";
-import p1 from '../../../../images/pictures/Screenshot 2024-01-18 at 15.42.19 copy.png'
+import p1 from '../../../../images/pictures/ID_CAM-Big.webp'
 import {Wrapper} from "../../../../components/Wrapper";
-import i1 from '../../../../images/pictures/IDCST-Prsentation.webp'
+import p2 from '../../../../images/pictures/IDCST-Prsentation.webp'
 import {S} from './_ProductStyles'
 
 export const Idcam = () => {
@@ -12,7 +12,7 @@ export const Idcam = () => {
 			<Container>
 			<S.DescriptionBox>
 				<S.SmallImgBox>
-					<S.SmallImg src={i1} alt={'implant'}/>
+					<S.SmallImg src={p2} alt={'implant'}/>
 				</S.SmallImgBox>
 				<Wrapper direction={'column'} gap={'10px'} padding={'30px'}>
 					<S.Title>ID CAM® STANDARD</S.Title>
