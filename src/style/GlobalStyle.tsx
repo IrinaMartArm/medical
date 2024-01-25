@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     input:focus, input:active, 
-    button:focus, button:active 
+    button:focus, button:active, 
 	select:active, select:focus{
         outline: none;
     }

@@ -22,9 +22,11 @@ const BigImg = styled.img`
 const SmallImgBox = styled.div`
 	max-width: 300px;
   	width: 100%;
+    margin: 30px 0;
 `
 const SmallImg = styled.img`
   width: 100%;
+  height: 100%;
 `
 const TextBox = styled.div`
   display: flex;

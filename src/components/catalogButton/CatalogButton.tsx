@@ -2,6 +2,13 @@ import React, {useState, MouseEvent} from "react";
 import {S} from './_CatalogButton'
 import {useTranslation} from "react-i18next";
 
+const items = [
+	{path: '/ID_CAM', name: 'ID CAM'},
+	{path: '/ID3', name: 'ID 3'},
+	{path: '/SurgicalKits', name: 'Surgical kits'},
+	{path: '/ProstheticElements', name: 'Prosthetic elements'},
+	{path: '/SurgicalSet', name: 'Surgical set'},
+]
 
 export const CatalogButton = () => {
 	const {t} = useTranslation();
@@ -25,16 +32,25 @@ export const CatalogButton = () => {
 			</S.Button>
 			<S.MenuWrapper isOpen={isOpen}>
 				<S.CatalogItems onClick={onClickOut}>
-					<S.CatalogItem onClick={onClickOut}>
-						<S.CatalogLink to={'/ID_CAM'}>
-							ID CAM
-						</S.CatalogLink>
-					</S.CatalogItem>
-					<S.CatalogItem onClick={onClickOut}>
-						<S.CatalogLink to={'/ID3'}>
-							ID 3
-						</S.CatalogLink>
-					</S.CatalogItem>
+					{items.map((el, index) => {
+						return (
+							<S.CatalogItem onClick={onClickOut} key={index}>
+								<S.CatalogLink to={el.path}>
+									{el.name}
+								</S.CatalogLink>
+							</S.CatalogItem>
+						)
+					})}
+					{/*<S.CatalogItem onClick={onClickOut}>*/}
+					{/*	<S.CatalogLink to={'/ID_CAM'}>*/}
+					{/*		ID CAM*/}
+					{/*	</S.CatalogLink>*/}
+					{/*</S.CatalogItem>*/}
+					{/*<S.CatalogItem onClick={onClickOut}>*/}
+					{/*	<S.CatalogLink to={'/ID3'}>*/}
+					{/*		ID 3*/}
+					{/*	</S.CatalogLink>*/}
+					{/*</S.CatalogItem>*/}
 				</S.CatalogItems>
 			</S.MenuWrapper>
 		</S.CatalogBtnBox>

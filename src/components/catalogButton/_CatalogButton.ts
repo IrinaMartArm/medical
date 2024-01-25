@@ -9,9 +9,9 @@ position: relative;
 `
 const MenuWrapper = styled.nav<{ isOpen: boolean }>`
   position: absolute;
-  left: -15px;
+  left: -25px;
   top: 50px;
-  min-width: 150px;
+  min-width: 280px;
   border-radius: 4px;
   z-index: 999;
   border: 1px solid black;
@@ -49,8 +49,9 @@ const MenuWrapper = styled.nav<{ isOpen: boolean }>`
   }
 `
 
-const CatalogItems = styled.ul`
+const CatalogItems = styled.ol`
   display: flex;
+  gap: 20px;
   flex-direction: column;
   align-items: start;
   padding: 15px;
@@ -62,12 +63,12 @@ const CatalogItem = styled.li`
   &::before {
     content: "";
     display: inline-block;
-    height: 2px;
+    height: 3px;
     background-color: transparent;
     position: absolute;
     bottom: 0;
-    left: 5px;
-    right: 5px;
+    left: 0;
+    right: 0;
     z-index: 2;
     transform: scale(0);
     transition: ${Theme.animations.transition};
