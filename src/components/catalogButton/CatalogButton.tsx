@@ -5,9 +5,9 @@ import {useTranslation} from "react-i18next";
 const items = [
 	{path: '/ID_CAM', name: 'ID CAM'},
 	{path: '/ID3', name: 'ID 3'},
+	{path: '/SurgicalSet', name: 'Surgical set'},
 	{path: '/SurgicalKits', name: 'Surgical kits'},
 	{path: '/ProstheticElements', name: 'Prosthetic elements'},
-	{path: '/SurgicalSet', name: 'Surgical set'},
 ]
 
 export const CatalogButton = () => {

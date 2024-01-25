@@ -15,10 +15,12 @@ export const IdCam = () => {
 			<S.BigImg src={p1} alt={'ID CAM'}/>
 			<Container>
 				<S.DescriptionBox>
+					<S.SmallImgBox>
+						<S.SmallImg src={p2} alt={'implant'}/>
+					</S.SmallImgBox>
 					<Wrapper direction={'column'} gap={'10px'} padding={'30px'}>
 						<S.Title>ID CAM® STANDARD</S.Title>
 						<S.Text>FEATURES
-							<div>FEATURES</div>
 							<div>EXTERNAL</div>
 							<div>- Cylindro-tapered shaped</div>
 							<div>- 2 types : Standard and Mini-threads.</div>
@@ -42,9 +44,6 @@ export const IdCam = () => {
 							</Button>
 						</S.Text>
 					</Wrapper>
-					<S.SmallImgBox>
-						<S.SmallImg src={p2} alt={'implant'}/>
-					</S.SmallImgBox>
 				</S.DescriptionBox>
 			</Container>
 		</S.IdcamBox>
