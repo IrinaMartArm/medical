@@ -20,7 +20,8 @@ export const SliderReact = () => {     //className={'swiper-container'}
 				modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
 				spaceBetween={50}
 				slidesPerView={1}
-				navigation={{clickable: true}}
+				scrollbar={{ draggable: true }}
+				// navigation
 				// pagination={{clickable: true}}
 				autoplay={{ delay: 2500 }}
 				className={styles.mySwiper}
@@ -28,13 +29,15 @@ export const SliderReact = () => {     //className={'swiper-container'}
 				<SwiperSlide>
 					<SlideImg src={p1}/>
 				</SwiperSlide>
-				<SwiperSlide><SlideImg src={p2}/></SwiperSlide>
+				<SwiperSlide>
+					<SlideImg src={p2}/>
+				</SwiperSlide>
 				<SwiperSlide>
 					<SlideImg src={p3}/>
 				</SwiperSlide>
 				{/*<div className={`${styles.custom_swipera}`}></div>*/}
-				<div className={`swiper-button-prev ${styles.custom_swiper}`}></div>
-				<div className={`swiper-button-next ${styles.custom_swiper}`}></div>
+				{/*<div className={`swiper-button-prev ${styles.custom_swiper}`}></div>*/}
+				{/*<div className={`swiper-button-next ${styles.custom_swiper}`}></div>*/}
 			</Swiper>
 		</SliderBox>
 

@@ -33,7 +33,8 @@ const VideoBox = styled.div`
   margin: 0 10px;
 `
 const Title = styled.h2`
-  ${font({weight: 500, fmax: 50, fmin: 24})};
+  //font-family: Alegreya Sans SC, sans-serif;
+  ${font({weight: 500, fmax: 42, fmin: 24})};
 `
 const Text = styled.p`
   ${font({weight: 400, fmax: 24, fmin: 16})};

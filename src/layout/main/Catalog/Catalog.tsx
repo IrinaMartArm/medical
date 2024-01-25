@@ -12,6 +12,7 @@ import id3 from '../../../images/pictures/id3.webp'
 import i4 from '../../../images/pictures/all-implants-062016-20.webp'
 import i5 from '../../../images/pictures/pink.webp'
 import {NavLink} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 // const worksItems: Array<{status: StatusType, title: string}> = [
 //   {
@@ -64,6 +65,7 @@ const Items = [
 ];
 
 export const Catalog: React.FC = () => {
+  const {t} = useTranslation();
   const [status, setStatus] = useState('all')
   let filteredItems = Items
   if(status === 'landing page') {
@@ -83,7 +85,7 @@ export const Catalog: React.FC = () => {
   return (
     <S.Works id="catalog">
       <Container>
-        <Title>Products</Title>
+        <Title>{t('productTitle')}</Title>
         {/*<Menu items={worksItems}*/}
         {/*      changeStatus={changeStatus}*/}
         {/*      status={status} */}

@@ -5,7 +5,7 @@ import {Wrapper} from "../../../../components/Wrapper";
 import p2 from '../../../../images/pictures/IDCST-Prsentation.webp'
 import {S} from './_ProductStyles'
 
-export const Idcam = () => {
+export const IdCam = () => {
 	return (
 		<S.IdcamBox>
 			<S.BigImg src={p1} alt={'ID CAM'}/>

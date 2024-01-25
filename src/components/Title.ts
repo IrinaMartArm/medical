@@ -12,7 +12,8 @@ export const Title = styled.h2<TitlePropsStyled>`
     position: relative;
     margin-bottom: 90px;
     color: ${Theme.colors.secondary};
-    ${font({ weight: 600, fmax: 36, fmin: 30 })}
+    font-family: Alegreya Sans SC, sans-serif;
+    ${font({ weight: 600, fmax: 42, fmin: 30 })}
 
     &::before {
     content: "";
