@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Items = styled.section`
     position: relative;
     text-align: center;  
-    margin-top: 30px;
+    margin: 30px 0;
     background-color: white;
 `
 
