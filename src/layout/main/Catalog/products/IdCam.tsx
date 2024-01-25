@@ -2,7 +2,7 @@ import React from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/ID_CAM-Big.webp'
 import {Wrapper} from "../../../../components/Wrapper";
-import p2 from '../../../../images/pictures/IDCST-Prsentation.webp'
+import p2 from '../../../../images/pictures/idcam__.jpg'
 import {S} from './_ProductStyles'
 
 
@@ -11,16 +11,33 @@ export const IdCam = () => {
 		<S.IdcamBox>
 			<S.BigImg src={p1} alt={'ID CAM'}/>
 			<Container>
-			<S.DescriptionBox>
-				<S.SmallImgBox>
-					<S.SmallImg src={p2} alt={'implant'}/>
-				</S.SmallImgBox>
-				<Wrapper direction={'column'} gap={'10px'} padding={'30px'}>
-					<S.Title>ID CAM® STANDARD</S.Title>
-					<S.Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, alias, necessitatibus? Commodi culpa dignissimos dolor magnam necessitatibus totam? Adipisci architecto doloribus ea earum eius error ex facere hic illum impedit iste libero minus nesciunt officia placeat praesentium quas quos repellat sint sit tempore vel voluptates, voluptatibus. Aut error officia perferendis quaerat voluptates? Excepturi in nisi perferendis quis rerum, sequi similique? Ad deserunt, doloremque facere harum ipsum nobis reiciendis suscipit tenetur veritatis vitae! Aperiam asperiores, excepturi illum laboriosam quae quos vel velit? Cum dolorum excepturi explicabo fugiat impedit incidunt ipsa, labore magnam minima numquam quas quibusdam quisquam sunt, tenetur, ut veritatis?</S.Text>
-
-				</Wrapper>
-			</S.DescriptionBox>
+				<S.DescriptionBox>
+					<Wrapper direction={'column'} gap={'10px'} padding={'30px'}>
+						<S.Title>ID CAM® STANDARD</S.Title>
+						<S.Text>FEATURES
+							<div>FEATURES</div>
+							<div>EXTERNAL</div>
+							<div>- Cylindro-tapered shaped</div>
+							<div>- 2 types : Standard and Mini-threads.</div>
+							<div>- Titanium alloy: TAL6V ELI</div>
+							<div>- S.M.A. and TiO2 state of surface</div>
+							<div>- Switching cone</div>
+							<div>- Condensing mini-threads</div>
+							<div>- Condensing high-threads</div>
+							<div>- Anti-unscrewing groove</div>
+							<div>- Self-drilling low threads</div>
+							<div>INTERNAL</div>
+							<div>- Cam retention</div>
+							<div>- 2,5° Morse taper (same to all diameters from the range)</div>
+							<div>-Universal ISO threading</div>
+							<div>LENGTH: 8mm - 10mm - 12mm - 15mm</div>
+							<div>DIAMETERS: 3,5mm - 4,2mm - 5,2mm</div>
+						</S.Text>
+					</Wrapper>
+					<S.SmallImgBox>
+						<S.SmallImg src={p2} alt={'implant'}/>
+					</S.SmallImgBox>
+				</S.DescriptionBox>
 			</Container>
 		</S.IdcamBox>
 	);
