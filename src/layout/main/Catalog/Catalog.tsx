@@ -10,8 +10,8 @@ import {v1} from "uuid";
 import idcam from '../../../images/pictures/IDCST-Prsentation.webp'
 import id3 from '../../../images/pictures/id3.webp'
 import turboBox from '../../../images/pictures/TURBOdrill-Dense-.webp'
-import kits from '../../../images/pictures/IDSPASSOR.webp'
-import D from '../../../images/pictures/D.jpg'
+import kits from '../../../images/pictures/kit.png'
+import D from '../../../images/pictures/D.png'
 import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
