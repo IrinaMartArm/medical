@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import { Theme } from "../style/Theme";
+import {font} from "../style/Common";
 
 export const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  padding: 8px;
+  a {
+     display: inline-block;
+  padding: 8px 50px;
+    margin-top: 20px;
   border-radius: 4px;
+  ${font({weight: 500, fmax: 24, fmin: 16})};
+  color: ${Theme.colors.secondary};
   background-color: ${Theme.colors.accent};
   transition: ${Theme.animations.transition};
 
@@ -16,4 +20,6 @@ export const Button = styled.button`
   &:active {
     color: ${Theme.colors.primary};
   }
+  }
+ 
 `

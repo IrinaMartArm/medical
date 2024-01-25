@@ -4,9 +4,12 @@ import p1 from '../../../../images/pictures/ID_CAM-Big.webp'
 import {Wrapper} from "../../../../components/Wrapper";
 import p2 from '../../../../images/pictures/idcam__.jpg'
 import {S} from './_ProductStyles'
+import {Button} from "../../../../components/Button";
+import {useTranslation} from "react-i18next";
 
 
 export const IdCam = () => {
+	const {t} = useTranslation();
 	return (
 		<S.IdcamBox>
 			<S.BigImg src={p1} alt={'ID CAM'}/>
@@ -32,6 +35,11 @@ export const IdCam = () => {
 							<div>-Universal ISO threading</div>
 							<div>LENGTH: 8mm - 10mm - 12mm - 15mm</div>
 							<div>DIAMETERS: 3,5mm - 4,2mm - 5,2mm</div>
+							<Button>
+								<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
+									{t('title3')}
+								</a>
+							</Button>
 						</S.Text>
 					</Wrapper>
 					<S.SmallImgBox>
