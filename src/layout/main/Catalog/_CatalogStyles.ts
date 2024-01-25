@@ -40,14 +40,14 @@ const ItemTitle = styled.div`
     //border: 1px solid red;
 `
 const ImgBox = styled.div`
-    //max-width: 250px;
-    //width: 100%;
-    //height: 200px;
+    max-width: 350px;
+    width: 100%;
 `
     
 const Image = styled.img`
+    max-width: 350px;
     width: 100%;
-   height: 360px;
+    //height: 360px;
     object-fit: cover;
     border-radius: 3px;
     //border: 1px solid red;

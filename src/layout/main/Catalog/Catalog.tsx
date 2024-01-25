@@ -114,7 +114,7 @@ export const Catalog: React.FC = () => {
                 </motion.div>
               );
             })}
-            <motion.div style={{maxWidth: "350px", width: "280px", flexGrow: 1}}
+            <motion.div style={{maxWidth: "350px", width: "100%", flexGrow: 1}}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
