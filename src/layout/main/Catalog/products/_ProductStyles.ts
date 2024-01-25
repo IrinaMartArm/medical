@@ -23,7 +23,6 @@ const SmallImgBox = styled.div`
 	max-width: 300px;
   	width: 100%;
     margin: 100px 0;
-  //border: 1px solid red;
 `
 const SmallImg = styled.img`
   width: 100%;
@@ -43,7 +42,13 @@ const Text = styled.div`
   text-align: start;
   ${font({weight: 400, fmax: 24, fmin: 16})};
 `
+const Text2 = styled.div`
+  padding-top: 30px;
+  text-align: start;
+  ${font({weight: 400, fmax: 24, fmin: 16})};
+  //border: 1px solid red;
+`
 
 export const S = {
-  IdcamBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox
+  IdcamBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2
 }

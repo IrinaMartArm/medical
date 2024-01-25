@@ -25,15 +25,10 @@ export const Id3 = () => {
 					</S.SmallImgBox>
 					<Wrapper direction={'column'} gap={'10px'} padding={'30px'}>
 						<S.Title>Id3</S.Title>
-						<S.Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, alias, necessitatibus?
-							Commodi culpa dignissimos dolor magnam necessitatibus totam? Adipisci architecto doloribus
-							ea earum eius error ex facere hic illum impedit iste libero minus nesciunt officia placeat
-							praesentium quas quos repellat sint sit tempore vel voluptates, voluptatibus. Aut error
-							officia perferendis quaerat voluptates? Excepturi in nisi perferendis quis rerum, sequi
-							similique? Ad deserunt, doloremque facere harum ipsum nobis reiciendis suscipit tenetur
-							veritatis vitae! Aperiam asperiores, excepturi illum laboriosam quae quos vel velit? Cum
-							dolorum excepturi explicabo fugiat impedit incidunt ipsa, labore magnam minima numquam quas
-							quibusdam quisquam sunt, tenetur, ut veritatis?</S.Text>
+						<S.Text>The ID3 new implant, dedicated to lateral incisors, Ø3mm, Morse Taper. As strong as a monobloc, prosthetic flexibility in addition!
+							The ID3 will complete your therapeutic arsenal.
+						</S.Text>
+						It has a real 2,5° morse taper, perfectly airtight, with 6 cams anchor for flawless prosthetic stability.
 					</Wrapper>
 				</S.DescriptionBox>
 				<div>
