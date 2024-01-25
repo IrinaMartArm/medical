@@ -25,7 +25,6 @@ export const IdCam = () => {
 					<Wrapper direction={'column'} gap={'20px'} padding={'30px'}>
 						<S.Title>ID CAM® STANDARD</S.Title>
 						<S.Text>
-							<div>FEATURES</div>
 							<div>EXTERNAL</div>
 							<div>- Cylindro-tapered shaped</div>
 							<div>- 2 types : Standard and Mini-threads.</div>
@@ -44,7 +43,7 @@ export const IdCam = () => {
 								<div>LENGTH: <img src={yell}/><strong> 8mm</strong> - <img
 									src={red}/><strong> 10mm</strong> - <img src={gr}/><strong> 12mm</strong> - <img
 									src={bl}/><strong> 15mm</strong></div>
-								<div>DIAMETERS: 3,5mm - 4,2mm - 5,2mm</div>
+								<div>DIAMETERS: <strong> 3,5mm</strong> - <strong> 4,2mm</strong> - <strong> 5,2mm</strong></div>
 							</S.Text2>
 							<Button>
 								<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
