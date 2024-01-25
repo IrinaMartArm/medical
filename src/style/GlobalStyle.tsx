@@ -54,9 +54,9 @@ export const GlobalStyle = createGlobalStyle`
 
 
     section {
-        padding: 80px 0;
+        padding: 40px 0;
         @media ${Theme.media.mobile} {
-            padding: 50px 0;
+            padding: 20px;
         }
     }
 

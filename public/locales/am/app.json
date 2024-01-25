@@ -1,3 +1,7 @@
 {
-  "title": "any text"
+  "expo": {
+    "name": "Sarmed",
+    "slug": "sarmed"
+  }
 }
+

@@ -1,5 +1,5 @@
 import React from "react";
-import { S } from "./WorksStyles";
+import { S } from "./_CatalogStyles";
 
 export type StatusType = 'all' | 'landing page' | 'react' | 'spa'
 

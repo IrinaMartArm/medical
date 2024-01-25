@@ -2,7 +2,7 @@ import styled from "styled-components";
 import * as React from "react";
 import ru from '../../images/pictures/rus.png'
 import en from '../../images/pictures/en-flag 1.png'
-import am from '../../images/pictures/arm-flag 1.png'
+import am from '../../images/pictures/arm-flag.png'
 import {useTranslation} from "react-i18next";
 
 

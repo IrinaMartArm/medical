@@ -11,6 +11,7 @@ const DescriptionBox = styled.div`
   width: 100%;
   padding: 20px;
   margin: 40px auto;
+  border-radius: 5px;
   border: 1px solid ${Theme.colors.border};
   background-color: white;
 `

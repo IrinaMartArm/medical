@@ -3,22 +3,21 @@ import { Theme } from "../../../style/Theme";
 import { motion } from "framer-motion";
 
 
-const Works = styled.section`
+const Items = styled.section`
     position: relative;
-    text-align: center;    
+    text-align: center;  
+    margin-top: 30px;
+    background-color: white;
 `
 
 
-const Work = styled(motion.div)`
-    /* max-width: 500px;
-    width: 330px; 
-    flex-grow: 1; */
-    border: 1px solid ${Theme.colors.border}; 
+const Item = styled(motion.div)`
     position: relative;
     transition: 0.2s ease-in;
-    padding: 20px;
+    padding: 25px 0;
     border-radius: 2%;
     background-color: white;
+    //border: 1px solid red;
 
     /* &:hover {
         outline: 2px solid ${Theme.colors.accent};
@@ -35,9 +34,10 @@ const Work = styled(motion.div)`
         }
     } */
 `
-const Box = styled.div`
+const ItemTitle = styled.div`
     padding-top: 25px;
     text-align: start;
+    //border: 1px solid red;
 `
 const ImgBox = styled.div`
     //max-width: 250px;
@@ -47,16 +47,17 @@ const ImgBox = styled.div`
     
 const Image = styled.img`
     width: 100%;
-   height: 300px;
+   height: 360px;
     object-fit: cover;
-    border-radius: 3px; 
+    border-radius: 3px;
+    //border: 1px solid red;
 `
 
 const Title = styled.h4`
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 20px;
     letter-spacing: 1px;
-    color: black;
+    color: ${Theme.colors.secondary};
+    //border: 1px solid red;
 `
 
 const Text = styled.p`
@@ -152,13 +153,13 @@ const Link = styled.a<{active: boolean}>`
 
 
 export const S = {
-    Works,
+    Items,
     Text,
     Title,
     Image,
     ImgBox,
-    Box,
-    Work,
+    ItemTitle,
+    Item,
     Menu,
     Link,
     List,

@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import { S } from "./WorksStyles";
+import { S } from "./_CatalogStyles";
 import { Title } from "../../../components/Title";
 import { Wrapper } from "../../../components/Wrapper";
 import { Item } from "./Item";
 import { Container } from "../../../components/Container";
-import { StatusType } from "./Menu";
+// import { StatusType } from "./Menu";
 import { AnimatePresence, motion } from "framer-motion"
 import {v1} from "uuid";
-import i1 from '../../../images/pictures/IDCST-Prsentation.webp'
+import idcam from '../../../images/pictures/IDCST-Prsentation.webp'
 import id3 from '../../../images/pictures/id3.webp'
-import i4 from '../../../images/pictures/all-implants-062016-20.webp'
-import i5 from '../../../images/pictures/pink.webp'
+import turboBox from '../../../images/pictures/TURBOdrill-Dense-.webp'
+import kits from '../../../images/pictures/IDSPASSOR.webp'
+import D from '../../../images/pictures/D.jpg'
 import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -39,7 +40,7 @@ const Items = [
     title: "ID CAM",
     type: "spa",
     path: "/ID_CAM",
-    img: i1
+    img: idcam
   },
   {
     id: v1(),
@@ -48,19 +49,26 @@ const Items = [
     path: "/ID3",
     img: id3
   },
+  // {
+  //   id: v1(),
+  //   title: "Surgical set",
+  //   type: "react",
+  //   path: "/id3",
+  //   img: turboBox
+  // },
   {
     id: v1(),
-    title: "Implant",
+    title: "Surgical kits",
     type: "react",
-    path: "/id3",
-    img: i4
+    path: "/SurgicalKits",
+    img: kits
   },
   {
     id: v1(),
-    title: "Implant",
+    title: "Prosthetic elements",
     type: "react",
-    path: "/id3",
-    img: i5
+    path: "/ProstheticElements",
+    img: D
   },
 ];
 
@@ -83,18 +91,18 @@ export const Catalog: React.FC = () => {
   // }
   
   return (
-    <S.Works id="catalog">
+    <S.Items id="catalog">
       <Container>
         <Title>{t('productTitle')}</Title>
         {/*<Menu items={worksItems}*/}
         {/*      changeStatus={changeStatus}*/}
         {/*      status={status} */}
         {/*/>*/}
-        <Wrapper justify="space-around" wrap="wrap" gap="30px">
+        <Wrapper justify="space-around" wrap="wrap" gap="20px">
           <AnimatePresence>
             {filteredItems.map((el) => {
               return (
-                <motion.div style={{maxWidth: "250px", width: "200px", flexGrow: 1}}
+                <motion.div style={{maxWidth: "250px", width: "280px", flexGrow: 1}}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
@@ -106,9 +114,24 @@ export const Catalog: React.FC = () => {
                 </motion.div>
               );
             })}
+            <motion.div style={{maxWidth: "350px", width: "280px", flexGrow: 1}}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        layout>
+              <NavLink to={"/SurgicalSet"}>
+                <Item title={"Surgical set"} text={''} image={turboBox} />
+              </NavLink>
+            </motion.div>
           </AnimatePresence>
         </Wrapper>
       </Container>
-    </S.Works>
+    </S.Items>
   );
 };
+// id: v1(),
+//     title: "Surgical set",
+//     type: "react",
+//     path: "/id3",
+//     img: turboBox
+// },

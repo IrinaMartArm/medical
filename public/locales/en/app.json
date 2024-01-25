@@ -1,12 +1,7 @@
 {
-
-  "expo": {
-    "_internal": {
-      "title1": "Home",
-      "title2": "About",
-      "title3": "Catalog",
-      "title4": "Contacts",
-      "productTitle": "Products"
-    }
-  }
+  "title1": "Home",
+  "title2": "About",
+  "title3": "Catalog",
+  "title4": "Contacts",
+  "productTitle": "Products"
 }
