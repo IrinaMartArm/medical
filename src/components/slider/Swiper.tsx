@@ -31,14 +31,18 @@ export const SliderReact = () => {     //className={'swiper-container'}
 					<SlideImg src={p1}/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<SlideImg src={p2}/>
+					<SlideImg src={p4}  style={{width: '500px'}}/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<SlideImg src={p3}/>
+					<SlideImg src={p2}/>
 				</SwiperSlide>
 				<SwiperSlide>
 					<SlideImg src={p4}  style={{width: '500px'}}/>
 				</SwiperSlide>
+				<SwiperSlide>
+					<SlideImg src={p3}/>
+				</SwiperSlide>
+
 				{/*<div className={`${styles.custom_swipera}`}></div>*/}
 				{/*<div className={`swiper-button-prev ${styles.custom_swiper}`}></div>*/}
 				{/*<div className={`swiper-button-next ${styles.custom_swiper}`}></div>*/}
