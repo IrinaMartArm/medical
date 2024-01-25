@@ -25,28 +25,18 @@ export const IdCam = () => {
 					<Wrapper direction={'column'} gap={'20px'} padding={'30px'}>
 						<S.Title>ID CAM® STANDARD</S.Title>
 						<S.Text>
-							<div>PRESENTATION</div>
-							<div>STANDARD</div>
-							<div>The IDCAM ST implant line (type IM)benefits from the SMA + Ti02 state of surface
-								initiated by IDI and used since 1987.
-								This self-condensing implant stands 75 N.cm screwing stress without being affected. The
-								IDCAM ST implant draws special attention to itself due to its Switching Cone neck and
-								to its cylindro-tapered body identical to a dental root.
-								The angulation, the state and the depth of the threads are specially studied to optimize
-								the primary stabilization in any bone density and favor the immediate loading.
-							</div>
+							<div>FEATURES</div>
+							<div>EXTERNAL</div>
+							<div>- Cylindro-tapered shaped</div>
+							<div>- 2 types : Standard and Mini-threads.</div>
+							<div>- Titanium alloy: TAL6V ELI</div>
+							<div>- S.M.A. and TiO2 state of surface</div>
+							<div>- Switching cone</div>
+							<div>- Condensing mini-threads</div>
+							<div>- Condensing high-threads</div>
+							<div>- Anti-unscrewing groove</div>
+							<div>- Self-drilling low threads</div>
 							<S.Text2>
-								<div>FEATURES</div>
-								<div>EXTERNAL</div>
-								<div>- Cylindro-tapered shaped</div>
-								<div>- 2 types : Standard and Mini-threads.</div>
-								<div>- Titanium alloy: TAL6V ELI</div>
-								<div>- S.M.A. and TiO2 state of surface</div>
-								<div>- Switching cone</div>
-								<div>- Condensing mini-threads</div>
-								<div>- Condensing high-threads</div>
-								<div>- Anti-unscrewing groove</div>
-								<div>- Self-drilling low threads</div>
 								<div>INTERNAL</div>
 								<div>- Cam retention</div>
 								<div>- 2,5° Morse taper (same to all diameters from the range)</div>
