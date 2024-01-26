@@ -4,7 +4,7 @@ import {font} from "../style/Common";
 
 export const Button = styled.button`
   position: absolute;
-  bottom: 70px;
+  bottom: 60px;
   left: 5px;
   a {
      display: inline-block;

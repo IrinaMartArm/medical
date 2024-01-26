@@ -59,7 +59,7 @@ export const Id3 = () => {
 
 const MobileVideos = () => {
 	return (
-		<iframe width="360" height="202" src="https://www.youtube.com/embed/bM9X0hoQQbM?si=VLCOCfs9zgk3YzRb"
+		<iframe width="270" height="151" src="https://www.youtube.com/embed/bM9X0hoQQbM?si=VLCOCfs9zgk3YzRb"
 				title="YouTube video player" frameBorder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowFullScreen></iframe>
