@@ -34,15 +34,15 @@ const BoxItems = styled.div`
 `
 
 const SmallImgBox = styled.div`
+    position: relative;
 	max-width: 300px;
   	width: 100%;
-    margin: 100px 0;
+    //margin: 100px 0;
 `
 
 const SmallImg = styled.img`
   max-width: 300px;
   width: 100%;
-  padding: 100px 0;
 `
 
 const TextBox = styled.div`
@@ -62,6 +62,7 @@ const Title = styled.h2`
 
 const Text = styled.div`
   text-align: start;
+  line-height: 1.4;
   ${font({weight: 400, fmax: 24, fmin: 16})};
 `
 

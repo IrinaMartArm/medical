@@ -1,14 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/Drell-Big.png'
-import {Wrapper} from "../../../../components/Wrapper";
 import p2 from '../../../../images/pictures/Drill.jpg'
 import p3 from '../../../../images/pictures/Drill2.png'
 import p4 from '../../../../images/pictures/Drill3.png'
 import {S} from './_ProductStyles'
 import {Button} from "../../../../components/Button";
 import {useTranslation} from "react-i18next";
-import {Video} from "../../about/Video";
 
 
 export const TurboDrill = () => {
@@ -30,9 +28,14 @@ export const TurboDrill = () => {
 					<S.Title>TURBOdrill®</S.Title>
 					<S.BoxItems>
 					<S.SmallImgBox>
-						<S.SmallImg src={p2} alt={'implant'}/>
 						<S.SmallImg src={p4} alt={'implant'}/>
 						<S.SmallImg src={p3} alt={'implant'}/>
+						<S.SmallImg src={p2} alt={'implant'}/>
+						<Button>
+							<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
+								{t('title3')}
+							</a>
+						</Button>
 					</S.SmallImgBox>
 						<S.TextBox>
 
@@ -44,11 +47,6 @@ export const TurboDrill = () => {
 						</S.Text>
 							<S.Text2> The TURBOdrill® is a cylindro-tapered drill with 4 serrated blades. It has a hollowed out stopper with blades acting as a turbine and leading the irrigation liquid along the blades till the bone socket. This intense irrigation phenomenon optimizes the cooling of the drill and thus of the operating site. The TURBOdrill® may be used up to 1 200 rpm with irrigation without bone heating up. The fixed stopper enables a safe drilling even with high speed.  There are two sizes: - TURBOdrill® for the IDCAM . Several studies show that the irrigation, the pressure exerted by the practitioner when drilling, the drilling duration and more generally the bone temperature rise have an impact on the osseointegration of the implant inserted. The TURBOdrill® plays on all these factors in order to optimize the implant success.
 							</S.Text2>
-							<Button>
-								<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
-									{t('title3')}
-								</a>
-							</Button>
 							<S.VideoBox>
 								{
 									width < breakPoint ? <MobileVideos/> : <DesktopVideos/>

@@ -6,6 +6,7 @@ import {Container} from "../../../../components/Container";
 import tabl from '../../../../images/pictures/Table.jpg'
 import {Button} from "../../../../components/Button";
 import {useTranslation} from "react-i18next";
+import styled from "styled-components";
 
 export const Id3 = () => {
 	const {t} = useTranslation();
@@ -25,7 +26,12 @@ export const Id3 = () => {
 					<S.Title>Id3</S.Title>
 					<S.BoxItems>
 						<S.SmallImgBox>
-							<S.SmallImg src={id3} alt={'implant'}/>
+							<SmallImg src={id3} alt={'implant'}/>
+							<Button>
+								<a href={'/ID3.pdf'} target="_blank" rel="noreferrer">
+									{t('title3')}
+								</a>
+							</Button>
 						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
@@ -38,11 +44,6 @@ export const Id3 = () => {
 							<div>
 								<S.Table src={tabl}/>
 							</div>
-							<Button>
-								<a href={'/ID3.pdf'} target="_blank" rel="noreferrer">
-									{t('title3')}
-								</a>
-							</Button>
 							<S.VideoBox>
 								{
 									width < breakPoint ? <MobileVideos/> : <DesktopVideos/>
@@ -73,3 +74,8 @@ const DesktopVideos = () => {
 				allowFullScreen></iframe>
 	)
 }
+const SmallImg = styled.img`
+  max-width: 300px;
+  width: 100%;
+  padding: 100px 0;
+`

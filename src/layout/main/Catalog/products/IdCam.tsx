@@ -10,6 +10,7 @@ import bl from '../../../../images/pictures/Ellipse 5.svg'
 import {S} from './_ProductStyles'
 import {Button} from "../../../../components/Button";
 import {useTranslation} from "react-i18next";
+import styled from "styled-components";
 
 
 export const IdCam = () => {
@@ -21,7 +22,14 @@ export const IdCam = () => {
 				<S.DescriptionBox>
 					<S.Title>ID CAM® STANDARD</S.Title>
 					<S.BoxItems>
-						<S.SmallImg src={p2} alt={'implant'}/>
+						<S.SmallImgBox>
+							<SmallImg src={p2} alt={'implant'}/>
+							<Button>
+								<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
+									{t('title3')}
+								</a>
+							</Button>
+						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
 								<div>EXTERNAL</div>
@@ -46,11 +54,6 @@ export const IdCam = () => {
 								<div>DIAMETERS: <strong> 3,5mm</strong> - <strong> 4,2mm</strong> - <strong> 5,2mm</strong>
 								</div>
 							</S.Text2>
-							<Button>
-								<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
-									{t('title3')}
-								</a>
-							</Button>
 						</S.TextBox>
 					</S.BoxItems>
 				</S.DescriptionBox>
@@ -58,4 +61,8 @@ export const IdCam = () => {
 		</S.ProductBox>
 	);
 }
-
+const SmallImg = styled.img`
+  max-width: 300px;
+  width: 100%;
+  padding: 70px 0;
+`

@@ -12,9 +12,9 @@ export const SurgicalSet = () => {
 				<S.DescriptionBox>
 					<S.Title>Surgery and prosthesis kit for IDcam</S.Title>
 					<S.BoxItems>
-						{/*<S.SmallImgBox>*/}
-						<S.SmallImg src={p2} alt={'implant'}/>
-						{/*</S.SmallImgBox>*/}
+						<S.SmallImgBox>
+							<S.SmallImg src={p2} alt={'implant'}/>
+						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
 								<div>COMPOSITION:</div>

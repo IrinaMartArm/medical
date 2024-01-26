@@ -3,6 +3,9 @@ import { Theme } from "../style/Theme";
 import {font} from "../style/Common";
 
 export const Button = styled.button`
+  position: absolute;
+  bottom: 70px;
+  left: 5px;
   a {
      display: inline-block;
   padding: 8px 50px;
