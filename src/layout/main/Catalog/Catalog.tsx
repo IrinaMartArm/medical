@@ -37,14 +37,14 @@ const Items = [
   {
     id: v1(),
     title: "ID CAM",
-    type: 'landing page',
+    type: 'Implants',
     path: "/ID_CAM",
     img: idcam
   },
   {
     id: v1(),
     title: "ID 3",
-    type: 'landing page',
+    type: 'Implants',
     path: "/ID3",
     img: id3
   },
@@ -58,7 +58,7 @@ const Items = [
   {
     id: v1(),
     title: "Prosthetic elements",
-    type: 'landing page',
+    type: 'Implants',
     path: "/ProstheticElements",
     img: D
   },
@@ -72,7 +72,7 @@ const Items = [
   {
     id: v1(),
     title: "TURBODrill",
-    type: 'landing page',
+    type: 'Implants',
     path: "/TurboDrill",
     img: Drill
   },

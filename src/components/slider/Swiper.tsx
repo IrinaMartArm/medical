@@ -29,7 +29,6 @@ export const SliderReact = () => {     //className={'swiper-container'}
 				//navigation
 				//pagination={{clickable: true}}
 				autoplay={{ delay: 2500 }}
-				className={styles.mySwiper}
 			>
 				{imgs.map((el, index) => {
 					return (
@@ -38,9 +37,6 @@ export const SliderReact = () => {     //className={'swiper-container'}
 						</SwiperSlide>
 					)
 				})}
-				{/*<div className={`swiper-scrollbar swiper-scrollbar-horizontal ${styles.custom_swiper}`}></div>*/}
-				{/*<div className={`swiper-button-prev ${styles.custom_swiper}`}></div>*/}
-				{/*<div className={`swiper-button-next ${styles.custom_swiper}`}></div>*/}
 			</Swiper>
 		</SliderBox>
 	);
