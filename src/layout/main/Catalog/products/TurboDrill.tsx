@@ -40,7 +40,6 @@ export const TurboDrill = () => {
 						</Button>
 					</S.SmallImgBox>
 						<S.TextBox>
-
 						<S.Text>
 							<div>DIFFERENTLY</div>
 							<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed stopper.</div>

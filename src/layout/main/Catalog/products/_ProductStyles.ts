@@ -38,7 +38,6 @@ const SmallImgBox = styled.div`
     position: relative;
 	max-width: 300px;
   	width: 100%;
-    //margin: 100px 0;
 `
 
 const SmallImg = styled.img`
