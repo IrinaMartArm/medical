@@ -12,6 +12,7 @@ import {SurgicalKits} from "../layout/main/Catalog/products/SurgicalKits";
 import {ProstheticElements} from "../layout/main/Catalog/products/ProstheticElements";
 import {TurboDrill} from "../layout/main/Catalog/products/TurboDrill";
 import {OsteoSinus} from "../layout/main/Catalog/products/OsteoSinus";
+import {AutoGoTop} from "../components/goTop/AutoGoTop";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
 					<Route path="*" element={<h1>404: PAGE NOT FOUND</h1>}/>
 				</Routes>
 			</div>
+			<AutoGoTop/>
 			<GoTop/>
 			<Footer/>
 		</div>

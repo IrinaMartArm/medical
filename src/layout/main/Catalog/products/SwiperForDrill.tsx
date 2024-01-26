@@ -25,11 +25,11 @@ export const SwiperForDrill = () => {     //className={'swiper-container'}
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				spaceBetween={50}
 				slidesPerView={1}
-				scrollbar={{ draggable: true }}
+				// scrollbar={{ draggable: true }}
 				navigation
 				pagination={{clickable: true}}
 				// autoplay={{ delay: 2500 }}
-				className={styles.custom_swiper}
+				// className={styles.custom_swiper}
 			>
 				{imgs.map((el, index) => {
 					return (
@@ -39,8 +39,9 @@ export const SwiperForDrill = () => {     //className={'swiper-container'}
 					)
 				})}
 				{/*<div className={`swiper-scrollbar swiper-scrollbar-horizontal ${styles.custom_swiper}`}></div>*/}
-				<div className={`swiper-button-prev ${styles.custom_swiper}`}></div>
-				<div className={`swiper-button-next ${styles.custom_swiper}`}></div>
+				{/*<div className={`swiper-button-prev ${styles.custom_swiper}`}></div>*/}
+				{/*<div className={`swiper-button-next ${styles.custom_swiper}`}></div>*/}
+				{/*<span className={`swiper-pagination-bullet  swiper-pagination-bullet-active ${styles.custom_swiper}`}></span>*/}
 			</Swiper>
 		</SliderBox>
 	);
