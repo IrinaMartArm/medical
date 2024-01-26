@@ -52,7 +52,7 @@ const Items = [
     id: v1(),
     title: "Surgical set",
     type: 'kit',
-    path: "/id3",
+    path: "SurgicalSet",
     img: turboBox
   },
   {
