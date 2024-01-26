@@ -12,7 +12,7 @@ import {useTranslation} from "react-i18next";
 export const TurboDrill = () => {
 	const {t} = useTranslation();
 	const [width, setWidth] = useState(window.innerWidth)
-	const breakPoint = 540
+	const breakPoint = 770
 	useEffect(() => {
 		const handleResize = () => setWidth(window.innerWidth)
 		window.addEventListener('resize', handleResize)
@@ -47,11 +47,11 @@ export const TurboDrill = () => {
 						</S.Text>
 							<S.Text2> The TURBOdrill® is a cylindro-tapered drill with 4 serrated blades. It has a hollowed out stopper with blades acting as a turbine and leading the irrigation liquid along the blades till the bone socket. This intense irrigation phenomenon optimizes the cooling of the drill and thus of the operating site. The TURBOdrill® may be used up to 1 200 rpm with irrigation without bone heating up. The fixed stopper enables a safe drilling even with high speed.  There are two sizes: - TURBOdrill® for the IDCAM . Several studies show that the irrigation, the pressure exerted by the practitioner when drilling, the drilling duration and more generally the bone temperature rise have an impact on the osseointegration of the implant inserted. The TURBOdrill® plays on all these factors in order to optimize the implant success.
 							</S.Text2>
-							<S.VideoBox>
+							{/*<S.VideoBox>*/}
 								{
-									width < breakPoint ? <MobileVideos/> : <DesktopVideos/>
+									width < breakPoint ? <iframe width="360" height="202" src="https://www.youtube.com/embed/jm4q7_nbJ88?si=ENsWaubqrkRWZwGc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> : <iframe width="560" height="315" src="https://www.youtube.com/embed/jm4q7_nbJ88?si=ENsWaubqrkRWZwGc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 								}
-							</S.VideoBox>
+							{/*</S.VideoBox>*/}
 							</S.TextBox>
 						</S.BoxItems>
 				</S.DescriptionBox>

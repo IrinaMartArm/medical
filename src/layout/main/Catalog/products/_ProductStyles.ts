@@ -80,6 +80,8 @@ const Table = styled.img`
 `
 
 const VideoBox = styled.div`
+  max-width: 600px;
+  width: 100%;
   margin-top: 50px;
 `
 
