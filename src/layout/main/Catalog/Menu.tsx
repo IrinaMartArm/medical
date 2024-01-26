@@ -1,7 +1,7 @@
 import React from "react";
 import { S } from "./_CatalogStyles";
 
-export type StatusType = 'all' | 'landing page' | 'kit' | 'spa'
+export type StatusType = 'all' | 'Implants' | 'kit' | 'spa'
 
 type MenuPropsType = {
   items: Array<{status: StatusType, title: string}>

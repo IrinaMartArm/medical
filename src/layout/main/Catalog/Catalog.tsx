@@ -23,11 +23,11 @@ const catigories: Array<{status: StatusType, title: string}> = [
     status: 'all'
   },
   {
-    title: 'Item',
-    status: 'landing page'
+    title: 'Implants',
+    status: 'Implants'
   },
   {
-    title: 'Kit',
+    title: 'Kits',
     status: 'kit'
   },
 
@@ -89,8 +89,8 @@ export const Catalog: React.FC = () => {
   const {t} = useTranslation();
   const [status, setStatus] = useState('all')
   let filteredItems = Items
-  if(status === 'landing page') {
-    filteredItems = Items.filter(work => work.type === 'landing page')
+  if(status === 'Implants') {
+    filteredItems = Items.filter(work => work.type === 'Implants')
   }
   if(status === 'kit') {
     filteredItems = Items.filter(work => work.type === 'kit')

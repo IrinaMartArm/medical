@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { Theme } from "../../../style/Theme";
 import { motion } from "framer-motion";
+import {font} from "../../../style/Common";
 
 
 const Items = styled.section`
@@ -46,7 +47,6 @@ const ImgBox = styled.div`
 const Image = styled.img`
     max-width: 350px;
     width: 100%;
-    //height: 360px;
     object-fit: cover;
     border-radius: 3px;
     //border: 1px solid red;
@@ -118,13 +118,12 @@ const ListItem = styled.li`
 `;
 
 const Link = styled.a<{active: boolean}>`
-    font-size: 16px;
-    font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 10px;
     position: relative;
     z-index: 2;
+    ${font({weight: 500, fmax: 22, fmin: 16})};
 
     &:hover {
         &::before{

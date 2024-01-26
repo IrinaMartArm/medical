@@ -1,6 +1,5 @@
-import React, { MouseEvent } from "react";
-
-import { animateScroll } from "react-scroll";
+import React from "react";
+// import { animateScroll } from "react-scroll";
 import logo from "../../images/svg/c.svg";
 import {S} from "../../layout/header/Header_styles";
 import {NavLink} from "react-router-dom";
