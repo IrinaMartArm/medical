@@ -7,6 +7,7 @@ import p4 from '../../../../images/pictures/Drill3.png'
 import {S} from './_ProductStyles'
 import {Button} from "../../../../components/Button";
 import {useTranslation} from "react-i18next";
+import {SwiperForDrill} from "./SwiperForDrill";
 
 
 export const TurboDrill = () => {
@@ -28,9 +29,7 @@ export const TurboDrill = () => {
 					<S.Title>TURBOdrill®</S.Title>
 					<S.BoxItems>
 					<S.SmallImgBox>
-						<S.SmallImg src={p4} alt={'implant'}/>
-						<S.SmallImg src={p3} alt={'implant'}/>
-						<S.SmallImg src={p2} alt={'implant'}/>
+						<SwiperForDrill/>
 						<Button>
 							<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
 								{t('title3')}

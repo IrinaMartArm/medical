@@ -20,7 +20,7 @@ const imgs = [
 
 export const SliderReact = () => {     //className={'swiper-container'}
 	return (
-		<SliderBox >
+		<SliderBox>
 			<Swiper
 				modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
 				spaceBetween={50}
@@ -43,7 +43,6 @@ export const SliderReact = () => {     //className={'swiper-container'}
 				{/*<div className={`swiper-button-next ${styles.custom_swiper}`}></div>*/}
 			</Swiper>
 		</SliderBox>
-
 	);
 };
 
