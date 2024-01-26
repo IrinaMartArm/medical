@@ -23,6 +23,7 @@ const DescriptionBox = styled.div`
 
 const BoxItems = styled.div`
   display: flex;
+  gap: 20px;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
@@ -49,7 +50,7 @@ const TextBox = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding: 30px;
+  padding: 10px;
   max-width: 800px;
   width: 100%;
   gap: 20px;
