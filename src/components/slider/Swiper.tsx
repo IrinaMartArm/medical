@@ -7,9 +7,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 import p1 from '../../images/pictures/ID_CAM-Big.webp'
-import p2 from '../../images/pictures/id-sistem-Big.webp'
+import p2 from '../../images/pictures/id-sistem-Big.png'
 import p3 from '../../images/pictures/1.webp'
-import p4 from '../../images/pictures/19.jpg'
+
 import styled from "styled-components";
 import styles from './Swiper.module.css'
 import {Theme} from "../../style/Theme";

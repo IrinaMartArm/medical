@@ -4,71 +4,84 @@ import { Title } from "../../../components/Title";
 import { Wrapper } from "../../../components/Wrapper";
 import { Item } from "./Item";
 import { Container } from "../../../components/Container";
-// import { StatusType } from "./Menu";
+import {Menu, StatusType} from "./Menu";
 import { AnimatePresence, motion } from "framer-motion"
 import {v1} from "uuid";
-import idcam from '../../../images/pictures/IDCST-Prsentation.webp'
-import id3 from '../../../images/pictures/id3.webp'
-import turboBox from '../../../images/pictures/TURBOdrill-Dense-.webp'
-import kits from '../../../images/pictures/kit.png'
+import idcam from '../../../images/pictures/mo.png'
+import id3 from '../../../images/pictures/Component 3.png'
+import turboBox from '../../../images/pictures/box.png'
+import kits from '../../../images/pictures/kr.png'
 import D from '../../../images/pictures/D.png'
+import Drill from '../../../images/pictures/Drill.jpg'
+import osteo from '../../../images/pictures/osteosinus-kit.png'
 import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
-// const worksItems: Array<{status: StatusType, title: string}> = [
-//   {
-//     title: 'All',
-//     status: 'all'
-//   },
-//   {
-//     title: 'Item',
-//     status: 'landing page'
-//   },
-//   {
-//     title: 'Item',
-//     status: 'react'
-//   },
-//   {
-//     title: 'Item',
-//     status: 'spa'
-//   },
-// ];
+const catigories: Array<{status: StatusType, title: string}> = [
+  {
+    title: 'All',
+    status: 'all'
+  },
+  {
+    title: 'Item',
+    status: 'landing page'
+  },
+  {
+    title: 'Kit',
+    status: 'kit'
+  },
+
+];
 
 const Items = [
   {
     id: v1(),
     title: "ID CAM",
-    type: "spa",
+    type: 'landing page',
     path: "/ID_CAM",
     img: idcam
   },
   {
     id: v1(),
     title: "ID 3",
-    type: "react",
+    type: 'landing page',
     path: "/ID3",
     img: id3
   },
-  // {
-  //   id: v1(),
-  //   title: "Surgical set",
-  //   type: "react",
-  //   path: "/id3",
-  //   img: turboBox
-  // },
+  {
+    id: v1(),
+    title: "Surgical set",
+    type: 'kit',
+    path: "/id3",
+    img: turboBox
+  },
+  {
+    id: v1(),
+    title: "Prosthetic elements",
+    type: 'landing page',
+    path: "/ProstheticElements",
+    img: D
+  },
   {
     id: v1(),
     title: "Surgical kits",
-    type: "react",
+    type: 'kit',
     path: "/SurgicalKits",
     img: kits
   },
   {
     id: v1(),
-    title: "Prosthetic elements",
-    type: "react",
-    path: "/ProstheticElements",
-    img: D
+    title: "TURBODrill",
+    type: 'landing page',
+    path: "/TurboDrill",
+    img: Drill
+  },
+  {
+    id: v1(),
+    title: "Osteosinus kit",
+    type: 'kit',
+    path: "/OsteoSinus",
+    img: osteo
   },
 ];
 
@@ -79,25 +92,25 @@ export const Catalog: React.FC = () => {
   if(status === 'landing page') {
     filteredItems = Items.filter(work => work.type === 'landing page')
   }
-  if(status === 'react') {
-    filteredItems = Items.filter(work => work.type === 'react')
+  if(status === 'kit') {
+    filteredItems = Items.filter(work => work.type === 'kit')
   }
   if(status === 'spa') {
     filteredItems = Items.filter(work => work.type === 'spa')
   }
 
-  // function changeStatus(value: StatusType) {
-  //   setStatus(value)
-  // }
+  function changeStatus(value: StatusType) {
+    setStatus(value)
+  }
   
   return (
     <S.Items id="catalog">
       <Container>
         <Title>{t('productTitle')}</Title>
-        {/*<Menu items={worksItems}*/}
-        {/*      changeStatus={changeStatus}*/}
-        {/*      status={status} */}
-        {/*/>*/}
+        <Menu items={catigories}
+              changeStatus={changeStatus}
+              status={status}
+        />
         <Wrapper justify="space-around" wrap="wrap" gap="20px">
           <AnimatePresence>
             {filteredItems.map((el) => {
@@ -114,24 +127,9 @@ export const Catalog: React.FC = () => {
                 </motion.div>
               );
             })}
-            <motion.div style={{maxWidth: "350px", width: "100%", flexGrow: 1}}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        layout>
-              <NavLink to={"/SurgicalSet"}>
-                <Item title={"Surgical set"} text={''} image={turboBox} />
-              </NavLink>
-            </motion.div>
           </AnimatePresence>
         </Wrapper>
       </Container>
     </S.Items>
   );
 };
-// id: v1(),
-//     title: "Surgical set",
-//     type: "react",
-//     path: "/id3",
-//     img: turboBox
-// },

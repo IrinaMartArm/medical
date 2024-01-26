@@ -17,8 +17,6 @@ const Item = styled(motion.div)`
     padding: 25px 0;
     border-radius: 2%;
     background-color: white;
-    border: 1px solid red;
-    //border: 1px solid red;
 
     /* &:hover {
         outline: 2px solid ${Theme.colors.accent};
@@ -43,7 +41,6 @@ const ItemTitle = styled.div`
 const ImgBox = styled.div`
     max-width: 350px;
     width: 100%;
-    border: 1px solid red;
 `
     
 const Image = styled.img`

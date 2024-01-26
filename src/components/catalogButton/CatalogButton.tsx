@@ -7,7 +7,9 @@ const items = [
 	{path: '/ID3', name: 'ID 3'},
 	{path: '/SurgicalSet', name: 'Surgical set'},
 	{path: '/SurgicalKits', name: 'Surgical kits'},
-	{path: '/ProstheticElements', name: 'Prosthetic elements'},
+	{path: '/ProstheticElements', name: 'Prosthetic Elements'},
+	{path: '/TurboDrill', name: 'TURBODrill'},
+	{path: '/OsteoSinus', name: 'Osteosinus kit'},
 ]
 
 export const CatalogButton = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/protez.png'
 import {Wrapper} from "../../../../components/Wrapper";
-import p2 from '../../../../images/pictures/D.jpg'
+import p2 from '../../../../images/pictures/D.png'
 import {S} from './_ProductStyles'
 
 export const ProstheticElements = () => {
