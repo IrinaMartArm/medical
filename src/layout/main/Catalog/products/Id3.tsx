@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import id3 from '../../../../images/pictures/id3small.jpg'
 import p1 from '../../../../images/pictures/ID3big.webp'
-import {Wrapper} from "../../../../components/Wrapper";
 import {S} from './_ProductStyles'
 import {Container} from "../../../../components/Container";
 import tabl from '../../../../images/pictures/Table.jpg'
@@ -19,37 +18,41 @@ export const Id3 = () => {
 	}, []);
 
 	return (
-		<S.IdcamBox>
+		<S.ProductBox>
 			<S.BigImg src={p1} alt={'ID CAM'}/>
 			<Container>
 				<S.DescriptionBox>
-					<S.SmallImgBox>
-						<S.SmallImg src={id3} alt={'implant'}/>
-					</S.SmallImgBox>
-					<Wrapper direction={'column'} gap={'10px'} padding={'30px'}>
-						<S.Title>Id3</S.Title>
-						<S.Text>
-							The ID3 new implant, dedicated to lateral incisors, Ø3mm, Morse Taper. As strong as a monobloc, prosthetic flexibility in addition!
-							The ID3 will complete your therapeutic arsenal.
-							It has a real 2,5° morse taper, perfectly airtight, with 6 cams anchor for flawless prosthetic stability.
-						</S.Text>
-						<div>
-							<S.Table src={tabl}/>
-						</div>
-						<Button>
-							<a href={'/ID3.pdf'} target="_blank" rel="noreferrer">
-								{t('title3')}
-							</a>
-						</Button>
-					</Wrapper>
+					<S.Title>Id3</S.Title>
+					<S.BoxItems>
+						<S.SmallImgBox>
+							<S.SmallImg src={id3} alt={'implant'}/>
+						</S.SmallImgBox>
+						<S.TextBox>
+							<S.Text>
+								The ID3 new implant, dedicated to lateral incisors, Ø3mm, Morse Taper. As strong as a
+								monobloc, prosthetic flexibility in addition!
+								The ID3 will complete your therapeutic arsenal.
+								It has a real 2,5° morse taper, perfectly airtight, with 6 cams anchor for flawless
+								prosthetic stability.
+							</S.Text>
+							<div>
+								<S.Table src={tabl}/>
+							</div>
+							<Button>
+								<a href={'/ID3.pdf'} target="_blank" rel="noreferrer">
+									{t('title3')}
+								</a>
+							</Button>
+							<S.VideoBox>
+								{
+									width < breakPoint ? <MobileVideos/> : <DesktopVideos/>
+								}
+							</S.VideoBox>
+						</S.TextBox>
+					</S.BoxItems>
 				</S.DescriptionBox>
-				<div>
-					{
-						width < breakPoint ? <MobileVideos/> : <DesktopVideos/>
-					}
-				</div>
 			</Container>
-		</S.IdcamBox>
+		</S.ProductBox>
 	);
 }
 

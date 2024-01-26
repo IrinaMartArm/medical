@@ -15,7 +15,7 @@ import {useTranslation} from "react-i18next";
 export const IdCam = () => {
 	const {t} = useTranslation();
 	return (
-		<S.IdcamBox>
+		<S.ProductBox>
 			<S.BigImg src={p1} alt={'ID CAM'}/>
 			<Container>
 				<S.DescriptionBox>
@@ -55,7 +55,7 @@ export const IdCam = () => {
 					</S.BoxItems>
 				</S.DescriptionBox>
 			</Container>
-		</S.IdcamBox>
+		</S.ProductBox>
 	);
 }
 

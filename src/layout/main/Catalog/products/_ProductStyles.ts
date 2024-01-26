@@ -2,13 +2,15 @@ import {font} from "../../../../style/Common";
 import styled from "styled-components";
 import {Theme} from "../../../../style/Theme";
 
-const IdcamBox = styled.div`
+const ProductBox = styled.div`
 	padding: 20px 0;
 `
+
 const BigImg = styled.img`
 	width: 100%;
    min-height: 200px;
 `
+
 const DescriptionBox = styled.div`
  text-align: center;
   width: 100%;
@@ -18,13 +20,12 @@ const DescriptionBox = styled.div`
   border: 1px solid ${Theme.colors.border};
   background-color: white;
 `
+
 const BoxItems = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  //flex-wrap: wrap;
   margin: 0 auto;
-  border: 1px solid red;
   @media (max-width: 900px) {
     flex-direction: column;
     margin: -20px auto;
@@ -33,16 +34,17 @@ const BoxItems = styled.div`
 `
 
 const SmallImgBox = styled.div`
-	//max-width: 300px;
-  //	width: 100%;
-  //  margin: 100px auto;
-  //border: 1px solid red;
+	max-width: 300px;
+  	width: 100%;
+    margin: 100px 0;
 `
+
 const SmallImg = styled.img`
   max-width: 300px;
   width: 100%;
   padding: 100px 0;
 `
+
 const TextBox = styled.div`
   display: flex;
   align-items: flex-start;
@@ -51,19 +53,18 @@ const TextBox = styled.div`
   max-width: 800px;
   width: 100%;
   gap: 20px;
-  border: 1px solid red;
 `
 
 const Title = styled.h2`
   padding: 15px;
   ${font({weight: 500, fmax: 42, fmin: 24})};
 `
+
 const Text = styled.div`
-  //padding: 20px;
   text-align: start;
-  //border: 1px solid red;
   ${font({weight: 400, fmax: 24, fmin: 16})};
 `
+
 const Text2 = styled.div`
   padding-top: 30px;
   text-align: start;
@@ -76,16 +77,11 @@ const Table = styled.img`
   width: 100%;
   border: 2px solid ${Theme.colors.border};
 `
+
 const VideoBox = styled.div`
-  margin: 50px 0;
+  margin-top: 50px;
 `
 
 export const S = {
-  IdcamBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems
+  ProductBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems
 }
-
-
-// const Table = styled.img`
-//   max-width: 500px;
-//   width: 100%;
-// `

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/Osteosinus-Big.png'
-import {Wrapper} from "../../../../components/Wrapper";
 import p2 from '../../../../images/pictures/osteosinus-kit.png'
 import yell from '../../../../images/pictures/Ellipse 3.svg'
 import red from '../../../../images/pictures/Ellipse 4.svg'
@@ -15,17 +14,19 @@ import {useTranslation} from "react-i18next";
 export const OsteoSinus = () => {
 	const {t} = useTranslation();
 	return (
-		<S.IdcamBox>
+		<S.ProductBox>
 			<S.BigImg src={p1} alt={'ID CAM'}/>
 			<Container>
 				<S.DescriptionBox>
+					<S.Title>Osteosinus Kit</S.Title>
+					<S.BoxItems>
 					<S.SmallImgBox>
 						<S.SmallImg src={p2} alt={'implant'}/>
 					</S.SmallImgBox>
 					<S.TextBox>
-						<S.Title>TURBOdrill®</S.Title>
+
 						<S.Text>
-							<div>DRILL DIFFERENTLY</div>
+							<div>Osteosinus Kit</div>
 							<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed stopper.</div>
 							<div>Control each drilling parameters : safety, irrigation, bone temperature & speed.</div>
 							<div>Cylindro-tapered drill, available in 4 lengths : 8, 10, 12 and 15 mm and 3 diameters : 3,6, 4,2 and 5,2 mm.</div>
@@ -47,16 +48,18 @@ export const OsteoSinus = () => {
 							{/*		src={bl}/><strong> 15mm</strong></div>*/}
 							{/*	<div>DIAMETERS: <strong> 3,5mm</strong> - <strong> 4,2mm</strong> - <strong> 5,2mm</strong></div>*/}
 							{/*</S.Text2>*/}
-							<Button>
-								<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
-									{t('title3')}
-								</a>
-							</Button>
+
 						</S.Text>
+						<Button>
+							<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
+								{t('title3')}
+							</a>
+						</Button>
 					</S.TextBox>
+						</S.BoxItems>
 				</S.DescriptionBox>
 			</Container>
-		</S.IdcamBox>
+		</S.ProductBox>
 	);
 }
 
