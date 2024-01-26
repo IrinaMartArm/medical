@@ -1,7 +1,6 @@
 import React from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/ID_CAM-Big.webp'
-import {Wrapper} from "../../../../components/Wrapper";
 import p2 from '../../../../images/pictures/idcam__.jpg'
 import yell from '../../../../images/pictures/Ellipse 3.svg'
 import red from '../../../../images/pictures/Ellipse 4.svg'
