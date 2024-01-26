@@ -19,43 +19,43 @@ export const IdCam = () => {
 			<S.BigImg src={p1} alt={'ID CAM'}/>
 			<Container>
 				<S.DescriptionBox>
-					<S.SmallImgBox>
+					<S.Title>ID CAM® STANDARD</S.Title>
+					<S.BoxItems>
 						<S.SmallImg src={p2} alt={'implant'}/>
-					</S.SmallImgBox>
-					<Wrapper direction={'column'} gap={'20px'} padding={'30px'}>
-						<S.Title>ID CAM® STANDARD</S.Title>
-						<S.Text>
-							<div>EXTERNAL</div>
-							<div>- Cylindro-tapered shaped</div>
-							<div>- 2 types : Standard and Mini-threads.</div>
-							<div>- Titanium alloy: TAL6V ELI</div>
-							<div>- S.M.A. and TiO2 state of surface</div>
-							<div>- Switching cone</div>
-							<div>- Condensing mini-threads</div>
-							<div>- Condensing high-threads</div>
-							<div>- Anti-unscrewing groove</div>
-							<div>- Self-drilling low threads</div>
+						<S.TextBox>
+							<S.Text>
+								<div>EXTERNAL</div>
+								<div>- Cylindro-tapered shaped</div>
+								<div>- 2 types : Standard and Mini-threads.</div>
+								<div>- Titanium alloy: TAL6V ELI</div>
+								<div>- S.M.A. and TiO2 state of surface</div>
+								<div>- Switching cone</div>
+								<div>- Condensing mini-threads</div>
+								<div>- Condensing high-threads</div>
+								<div>- Anti-unscrewing groove</div>
+								<div>- Self-drilling low threads</div>
+							</S.Text>
 							<S.Text2>
 								<div>INTERNAL</div>
 								<div>- Cam retention</div>
 								<div>- 2,5° Morse taper (same to all diameters from the range)</div>
 								<div>-Universal ISO threading</div>
-								<div>LENGTH: <img src={yell}/><strong> 8mm</strong> - <img
-									src={red}/><strong> 10mm</strong> - <img src={gr}/><strong> 12mm</strong> - <img
-									src={bl}/><strong> 15mm</strong></div>
-								<div>DIAMETERS: <strong> 3,5mm</strong> - <strong> 4,2mm</strong> - <strong> 5,2mm</strong></div>
+								<div>LENGTH: <img src={yell} alt={''}/><strong> 8mm</strong> - <img
+									src={red} alt={''}/><strong> 10mm</strong> - <img src={gr} alt={''}/><strong> 12mm</strong> - <img
+									src={bl} alt={''}/><strong> 15mm</strong></div>
+								<div>DIAMETERS: <strong> 3,5mm</strong> - <strong> 4,2mm</strong> - <strong> 5,2mm</strong>
+								</div>
 							</S.Text2>
 							<Button>
 								<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
 									{t('title3')}
 								</a>
 							</Button>
-						</S.Text>
-					</Wrapper>
+						</S.TextBox>
+					</S.BoxItems>
 				</S.DescriptionBox>
 			</Container>
 		</S.IdcamBox>
 	);
 }
-
 

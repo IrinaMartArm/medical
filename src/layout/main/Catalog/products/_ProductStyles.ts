@@ -5,49 +5,61 @@ import {Theme} from "../../../../style/Theme";
 const IdcamBox = styled.div`
 	padding: 20px 0;
 `
+const BigImg = styled.img`
+	width: 100%;
+   min-height: 200px;
+`
 const DescriptionBox = styled.div`
-  display: flex;
-  //flex-wrap: wrap;
-  flex-direction: row;
+ text-align: center;
+  width: 100%;
   padding: 20px;
   margin: 40px auto;
   border-radius: 5px;
   border: 1px solid ${Theme.colors.border};
   background-color: white;
+`
+const BoxItems = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  //flex-wrap: wrap;
+  margin: 0 auto;
+  border: 1px solid red;
   @media (max-width: 900px) {
     flex-direction: column;
     margin: -20px auto;
+    align-items: center;
   }
 `
-const BigImg = styled.img`
-	width: 100%;
-   min-height: 200px;
-`
+
 const SmallImgBox = styled.div`
-	max-width: 300px;
-  	width: 100%;
-    margin: 100px auto;
+	//max-width: 300px;
+  //	width: 100%;
+  //  margin: 100px auto;
+  //border: 1px solid red;
 `
 const SmallImg = styled.img`
+  max-width: 300px;
   width: 100%;
+  padding: 100px 0;
 `
 const TextBox = styled.div`
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   padding: 30px;
-  margin: 0 auto;
   max-width: 800px;
   width: 100%;
   gap: 20px;
-  //border: 1px solid red;
+  border: 1px solid red;
 `
 
 const Title = styled.h2`
-  //font-family: Alegreya Sans SC, sans-serif;
+  padding: 15px;
   ${font({weight: 500, fmax: 42, fmin: 24})};
 `
 const Text = styled.div`
-  padding: 20px;
+  //padding: 20px;
   text-align: start;
   //border: 1px solid red;
   ${font({weight: 400, fmax: 24, fmin: 16})};
@@ -69,7 +81,7 @@ const VideoBox = styled.div`
 `
 
 export const S = {
-  IdcamBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox
+  IdcamBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems
 }
 
 
