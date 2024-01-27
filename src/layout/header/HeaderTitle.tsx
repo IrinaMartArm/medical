@@ -9,10 +9,8 @@ export const HeaderTitle: React.FC = () => {
     <S.HeaderTitle>
       <Container padding={'0 20px'}>
           <Wrapper justify={'center'} align={'center'} padding={'200px'} direction={'column'} gap={'50px'}>
-              <h1>implants, implantation</h1>
+              <h1>SARMED sarmed implants, implantation</h1>
               <S.SmallTitle>
-                  <h3>Доставка в день заказа</h3>
-                  <h3>Оплата при получении</h3>
               </S.SmallTitle>
           </Wrapper>
       </Container>
