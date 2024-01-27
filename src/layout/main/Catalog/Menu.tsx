@@ -1,5 +1,5 @@
 import React from "react";
-import { S } from "./_CatalogStyles";
+import { St } from "./_CatalogStyles";
 
 export type StatusType = 'all' | 'Implants' | 'kit' | 'spa'
 
@@ -11,17 +11,17 @@ type MenuPropsType = {
 
 export const Menu: React.FC<MenuPropsType> = (props: MenuPropsType) => {
   return (
-    <S.Menu>
-      <S.List>
+    <St.Menu>
+      <St.List>
         {props.items.map((i, index) => {
           return (
-            <S.ListItem key={index}>
-              <S.Link active={props.status === i.status} onClick={()=>{props.changeStatus(i.status)}}>{i.title}</S.Link>
-            </S.ListItem>
+            <St.ListItem key={index}>
+              <St.Link active={props.status === i.status} onClick={()=>{props.changeStatus(i.status)}}>{i.title}</St.Link>
+            </St.ListItem>
           );
         })}
-      </S.List>
-    </S.Menu>
+      </St.List>
+    </St.Menu>
   );
 };
 

@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/Drell-Big.png'
-import p2 from '../../../../images/pictures/Drill.jpg'
-import p3 from '../../../../images/pictures/Drill2.png'
-import p4 from '../../../../images/pictures/Drill3.png'
 import {S} from './_ProductStyles'
 import {Button} from "../../../../components/Button";
 import {useTranslation} from "react-i18next";

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container} from "../../../../components/Container";
-import p1 from '../../../../images/pictures/Drell-Big.png'
+import p1 from '../../../../images/pictures/Drell-Big.jpg'
 import p2 from '../../../../images/pictures/box.png'
 import {S} from './_ProductStyles'
 

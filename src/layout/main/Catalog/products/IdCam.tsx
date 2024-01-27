@@ -42,7 +42,7 @@ export const IdCam = () => {
 								<div>- Anti-unscrewing groove</div>
 								<div>- Self-drilling low threads</div>
 							</S.Text>
-							<S.Text2>
+							<S.Text>
 								<div>INTERNAL</div>
 								<div>- Cam retention</div>
 								<div>- 2,5° Morse taper (same to all diameters from the range)</div>
@@ -52,7 +52,7 @@ export const IdCam = () => {
 									src={bl} alt={''}/><strong> 15mm</strong></div>
 								<div>DIAMETERS: <strong> 3,5mm</strong> - <strong> 4,2mm</strong> - <strong> 5,2mm</strong>
 								</div>
-							</S.Text2>
+							</S.Text>
 						</S.TextBox>
 					</S.BoxItems>
 				</S.DescriptionBox>

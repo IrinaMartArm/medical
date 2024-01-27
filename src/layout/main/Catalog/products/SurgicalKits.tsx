@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/ID_CAM-Big.webp'
-import kits from '../../../../images/pictures/kr.png'
+import kits1 from '../../../../images/pictures/box1.jpeg'
+import kits2 from '../../../../images/pictures/box2.png'
 import {S} from './_ProductStyles'
 import {Button} from "../../../../components/Button";
 import {useTranslation} from "react-i18next";
@@ -26,7 +27,7 @@ export const SurgicalKits = () => {
 					<S.Title>Surgical Kits</S.Title>
 					<S.BoxItems>
 						<S.SmallImgBox>
-							<S.SmallImg src={kits} alt={'implant'}/>
+							<S.SmallImg src={kits1} alt={'implant'}/>
 							<Button>
 								<a href={'/idpara.pdf'} target="_blank" rel="noreferrer">
 									{t('title3')}
@@ -59,7 +60,7 @@ export const SurgicalKits = () => {
 					<S.Title>Surgical Kits</S.Title>
 					<S.BoxItems>
 						<S.SmallImgBox>
-							<S.SmallImg src={kits} alt={'implant'}/>
+							<S.SmallImg src={kits2} alt={'implant'}/>
 							<Button>
 								<a href={'/idspassor.pdf'} target="_blank" rel="noreferrer">
 									{t('title3')}

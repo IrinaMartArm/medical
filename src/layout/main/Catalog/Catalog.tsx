@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { S } from "./_CatalogStyles";
+import { St } from "./_CatalogStyles";
 import { Title } from "../../../components/Title";
 import { Wrapper } from "../../../components/Wrapper";
 import { Item } from "./Item";
@@ -10,7 +10,7 @@ import {v1} from "uuid";
 import idcam from '../../../images/pictures/mo.png'
 import id3 from '../../../images/pictures/Component 3.png'
 import turboBox from '../../../images/pictures/box.png'
-import kits from '../../../images/pictures/kr.png'
+import kits from '../../../images/pictures/box2.png'
 import D from '../../../images/pictures/D.png'
 import Drill from '../../../images/pictures/Drill.jpg'
 import osteo from '../../../images/pictures/osteosinus-kit.png'
@@ -109,7 +109,7 @@ export const Catalog: React.FC = () => {
   }
   
   return (
-    <S.Items id="catalog">
+    <St.Items id="catalog">
       <Container>
         <Title>{t('productTitle')}</Title>
         <Menu items={catigories}
@@ -135,6 +135,6 @@ export const Catalog: React.FC = () => {
           </AnimatePresence>
         </Wrapper>
       </Container>
-    </S.Items>
+    </St.Items>
   );
 };

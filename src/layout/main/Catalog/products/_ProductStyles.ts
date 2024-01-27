@@ -11,10 +11,10 @@ const BigImg = styled.img`
    min-height: 200px;
 `
 
-const DescriptionBox = styled.div`
+const DescriptionBox = styled.section`
  text-align: center;
   width: 100%;
-  padding: 20px;
+  padding: 0 20px 20px;
   margin: 40px auto;
   border-radius: 5px;
   border: 1px solid ${Theme.colors.border};
@@ -35,13 +35,19 @@ const BoxItems = styled.div`
 `
 
 const SmallImgBox = styled.div`
-    position: relative;
-	max-width: 300px;
+    //position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: start;
+	max-width: 400px;
   	width: 100%;
+    padding: 15px 0;
 `
 
 const SmallImg = styled.img`
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
 `
 
@@ -59,6 +65,14 @@ const Title = styled.h2`
   padding: 15px;
   ${font({weight: 500, fmax: 42, fmin: 24})};
 `
+const Title2 = styled.div`
+  padding: 25px 0;
+  ${font({weight: 400, fmax: 28, fmin: 18})};
+`
+const Title3 = styled.h4`
+  padding: 20px 0;
+  ${font({weight: 500, fmax: 32, fmin: 20})};
+`
 
 const Text = styled.div`
   text-align: start;
@@ -67,10 +81,8 @@ const Text = styled.div`
 `
 
 const Text2 = styled.div`
-  padding-top: 30px;
   text-align: start;
   ${font({weight: 400, fmax: 24, fmin: 16})};
-  
 `
 
 const Table = styled.img`
@@ -84,7 +96,56 @@ const VideoBox = styled.div`
   width: 100%;
   margin-top: 50px;
 `
+const ButtonsBox = styled.div`
+  display: flex;
+  gap: 50px;
+`
+const Button = styled.button`
+  a {
+    display: inline-block;
+    padding: 8px 50px;
+    margin-top: 20px;
+    border-radius: 4px;
+    ${font({weight: 500, fmax: 24, fmin: 16})};
+    color: ${Theme.colors.secondary};
+    background-color: transparent;
+    border: 2px solid ${Theme.colors.accent};
+    //background-color: ${Theme.colors.secondary};
+    transition: ${Theme.animations.transition};
+
+    &:hover {
+      color: ${Theme.colors.accent};
+      border: 2px solid ${Theme.colors.secondary};
+      transform: scale(1.01);
+    }
+
+    &:active {
+      color: ${Theme.colors.primary};
+    }
+  }
+`
+const TableBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+const TableBoxTitles = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 100px;
+`
+const TableBoxTitle = styled.div`
+  ${font({weight: 500, fmax: 24, fmin: 16})};
+`
+const TablImg = styled.img`
+  max-width: 500px;
+  width: 100%;
+`
+const TablImgBox = styled.div`
+  max-width: 500px;
+  width: 100%;
+`
 
 export const S = {
-  ProductBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems
+  ProductBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems, ButtonsBox, Button, Title2, TableBox, TableBoxTitles, TableBoxTitle, TablImg, TablImgBox, Title3
 }

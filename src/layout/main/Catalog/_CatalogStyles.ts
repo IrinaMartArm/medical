@@ -154,7 +154,7 @@ const Link = styled.a<{active: boolean}>`
 `;
 
 
-export const S = {
+export const St = {
     Items,
     Text,
     Title,

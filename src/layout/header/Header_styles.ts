@@ -24,7 +24,7 @@ const Navigation = styled.nav`
   //   padding: 5px 80px 5px 0;
   // }
 `;
-const SmallTitle = styled.div`
+const SmallTitle = styled.h2`
   display: flex;
   gap: 60px;
 `

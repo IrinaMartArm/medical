@@ -1,5 +1,5 @@
 import React from "react";
-import { S } from "./_CatalogStyles";
+import { St } from "./_CatalogStyles";
 
 
 type WorkPropsType = {
@@ -11,16 +11,16 @@ type WorkPropsType = {
 
 export const Item: React.FC<WorkPropsType> = (props: WorkPropsType) => {
     return (  
-        <S.Item>
-            <S.ImgBox>
-                <S.Image src={props.image} alt={props.alt}/>
-            </S.ImgBox>
+        <St.Item>
+            <St.ImgBox>
+                <St.Image src={props.image} alt={props.alt}/>
+            </St.ImgBox>
             {/*<S.ItemTitle/>*/}
-                <S.Button>{props.title}</S.Button>
+                <St.Button>{props.title}</St.Button>
                 {/*<S.Text>{props.text}</S.Text>*/}
                 {/*<S.Button>Demo</S.Button>*/}
 
-        </S.Item>
+        </St.Item>
     );
 }
 
