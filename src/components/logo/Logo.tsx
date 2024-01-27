@@ -11,7 +11,7 @@ export const Logo: React.FC = () => {
     // }
     return (
         <NavLink to={'/'}>
-            <S.Logotip src={logo} alt={'logo'}/>
+            <S.Logotip src={logo} alt={'SARMED'}/>
         </NavLink>
     );
 }

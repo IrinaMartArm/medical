@@ -39,49 +39,56 @@ const Items = [
     title: "ID CAM",
     type: 'Implants',
     path: "/ID_CAM",
-    img: idcam
+    img: idcam,
+    alt: 'SARMED ID CAM'
   },
   {
     id: v1(),
     title: "ID 3",
     type: 'Implants',
     path: "/ID3",
-    img: id3
+    img: id3,
+    alt: 'SARMED ID3'
   },
   {
     id: v1(),
     title: "Surgical set",
     type: 'kit',
     path: "SurgicalSet",
-    img: turboBox
+    img: turboBox,
+    alt: 'SARMED Surgical set'
   },
   {
     id: v1(),
     title: "Prosthetic elements",
     type: 'Implants',
     path: "/ProstheticElements",
-    img: D
+    img: D,
+    alt: 'SARMED Prosthetic elements'
   },
   {
     id: v1(),
     title: "Surgical kits",
     type: 'kit',
     path: "/SurgicalKits",
-    img: kits
+    img: kits,
+    alt: 'SARMED Surgical kits'
   },
   {
     id: v1(),
     title: "TURBODrill",
     type: 'Implants',
     path: "/TurboDrill",
-    img: Drill
+    img: Drill,
+    alt: 'SARMED TURBODrill'
   },
   {
     id: v1(),
     title: "Osteosinus kit",
     type: 'kit',
     path: "/OsteoSinus",
-    img: osteo
+    img: osteo,
+    alt: 'SARMED Osteosinus kit'
   },
 ];
 
@@ -122,7 +129,7 @@ export const Catalog: React.FC = () => {
                             key={el.id}
                             layout>
                   <NavLink to={el.path}>
-                    <Item key={el.id} title={el.title} text={''} image={el.img} />
+                    <Item key={el.id} title={el.title} text={''} image={el.img} alt={el.alt}/>
                   </NavLink>
                 </motion.div>
               );

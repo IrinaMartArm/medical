@@ -31,7 +31,7 @@ export const SwiperForDrill = () => {     //className={'swiper-container'}
 				{imgs.map((el, index) => {
 					return (
 						<SwiperSlide key={index}>
-							<SlideImg src={el.path}/>
+							<SlideImg src={el.path} alt={'implant TURBODrill'}/>
 						</SwiperSlide>
 					)
 				})}

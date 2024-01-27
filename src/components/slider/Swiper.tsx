@@ -11,7 +11,6 @@ import p2 from '../../images/pictures/id-sistem-Big.png'
 import p3 from '../../images/pictures/1.webp'
 
 import styled from "styled-components";
-import styles from './Swiper.module.css'
 import {Theme} from "../../style/Theme";
 
 const imgs = [
@@ -33,7 +32,7 @@ export const SliderReact = () => {     //className={'swiper-container'}
 				{imgs.map((el, index) => {
 					return (
 						<SwiperSlide key={index}>
-							<SlideImg src={el.path}/>
+							<SlideImg src={el.path} alt={'SARMED implants'}/>
 						</SwiperSlide>
 					)
 				})}

@@ -66,6 +66,10 @@ const Button = styled.a`
     margin-right: 25px;
     position: relative;
     z-index: 2;
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: ${Theme.colors.secondary};
     
 
     &::before {
@@ -73,10 +77,10 @@ const Button = styled.a`
         display: inline-block;
         position: absolute;
         height: 2px;
-        width: 140%;
+        width: 120%;
         background-color: ${Theme.colors.accent};
         bottom: -1px;
-        left: -8px;
+        left: -10%;
         border-radius: 3px;
         transition: ${Theme.animations.transition};
     }
@@ -89,7 +93,7 @@ const Button = styled.a`
     }
 
     &:active {
-        color: ${Theme.colors.accent};
+        color: ${Theme.colors.secondary};
         &::before {
             height: 90%;
             z-index: -1;
