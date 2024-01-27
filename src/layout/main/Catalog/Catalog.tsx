@@ -102,9 +102,7 @@ export const Catalog: React.FC = () => {
   if(status === 'kit') {
     filteredItems = Items.filter(work => work.type === 'kit')
   }
-  if(status === 'spa') {
-    filteredItems = Items.filter(work => work.type === 'spa')
-  }
+
 
   function changeStatus(value: StatusType) {
     setStatus(value)
