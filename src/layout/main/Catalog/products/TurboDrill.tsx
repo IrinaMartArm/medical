@@ -39,12 +39,11 @@ export const TurboDrill = () => {
 						<S.TextBox>
 						<S.Text>
 							<div>DIFFERENTLY</div>
-							<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed stopper.</div>
-							<div>Control each drilling parameters : safety, irrigation, bone temperature & speed.</div>
-							<div>Cylindro-tapered drill, available in 4 lengths : 8, 10, 12 and 15 mm and 3 diameters : 3,6, 4,2 and 5,2 mm.</div>
+							<div>{t("TD1")}</div>
+							<div>{t("TD2")}</div>
+							<div>{t("TD3")}</div>
 						</S.Text>
-							<S.Text2> The TURBOdrill® is a cylindro-tapered drill with 4 serrated blades. It has a hollowed out stopper with blades acting as a turbine and leading the irrigation liquid along the blades till the bone socket. This intense irrigation phenomenon optimizes the cooling of the drill and thus of the operating site. The TURBOdrill® may be used up to 1 200 rpm with irrigation without bone heating up. The fixed stopper enables a safe drilling even with high speed.  There are two sizes: - TURBOdrill® for the IDCAM . Several studies show that the irrigation, the pressure exerted by the practitioner when drilling, the drilling duration and more generally the bone temperature rise have an impact on the osseointegration of the implant inserted. The TURBOdrill® plays on all these factors in order to optimize the implant success.
-							</S.Text2>
+							<S.Text2>{t("TD4")}</S.Text2>
 							{/*<S.VideoBox>*/}
 								{
 									width < breakPoint ? <MobileVideos/> : <DesktopVideos/>

@@ -11,6 +11,8 @@ import t1 from '../../../../images/pictures/osteosinus/t2.png'
 import {S} from './_ProductStyles'
 import {Button} from "../../../../components/Button";
 import {useTranslation} from "react-i18next";
+import styled from "styled-components";
+import {font} from "../../../../style/Common";
 
 
 
@@ -33,24 +35,14 @@ export const OsteoSinus = () => {
 							</Button>
 						</S.SmallImgBox>
 						<S.TextBox>
-							<S.Text>
-								<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION
-									INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed
-									stopper.
-								</div>
-								<div>Control each drilling parameters : safety, irrigation, bone temperature & speed.
-								</div>
-								<div>Cylindro-tapered drill, available in 4 lengths : 8, 10, 12 and 15 mm and 3
-									diameters : 3,6, 4,2 and 5,2 mm.
-								</div>
-								<S.Title2>BENEFITS</S.Title2>
-								<div> The TURBOdrill® is a cylindro-tapered drill with 4 serrated blades. It has a
-									hollowed out stopper with blades acting as a turbine and leading the irrigation
-									liquid along the blades till the bone socket. This intense irrigation phenomenon
-									optimizes the cooling of the drill and thus of the operating site. The TURBOdrill®
-									may be used up to 1 200 rpm with irrigation without bone heating up.
-								</div>
-							</S.Text>
+							<Text>
+								<div>{t("OS1/1")}</div>
+								<div>{t("OS1/2")}</div>
+								<div>{t("OS1/3")}</div>
+								<S.Title2>{t("BENEFITS")}</S.Title2>
+								<div>{t("OS1/4")}</div>
+								<div>{t("OS1/5")}</div>
+							</Text>
 						</S.TextBox>
 					</S.BoxItems>
 				</S.DescriptionBox>
@@ -69,13 +61,10 @@ export const OsteoSinus = () => {
 						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
-								<S.Title2>CHARACTERISTICS</S.Title2>
-								<div>Osteosinus Kit</div>
-								<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION
-									INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed
-									stopper.
-								</div>
-								<S.Title2>TABLE OF LENGTHS AND DIAMETERS</S.Title2>
+								<S.Title2>{t("SK-title2")}</S.Title2>
+								<div>{t("OS2/1")}</div>
+								<div>{t("OS2/2")}</div>
+								<S.Title2>{t("tableTitle")}</S.Title2>
 								<S.TableBox>
 									<S.TableBoxTitles>
 										<S.TableBoxTitle>Length</S.TableBoxTitle>
@@ -105,13 +94,10 @@ export const OsteoSinus = () => {
 						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
-								<S.Title2>CHARACTERISTICS</S.Title2>
-								<div>Osteosinus Kit</div>
-								<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION
-									INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed
-									stopper.
-								</div>
-								<S.Title2>TABLE OF LENGTHS AND DIAMETERS</S.Title2>
+								<S.Title2>{t("SK-title2")}</S.Title2>
+								<div>{t("OS3/1")}</div>
+								<div>{t("OS3/2")}</div>
+								<S.Title2>{t("tableTitle")}</S.Title2>
 								<S.TableBox>
 									<S.TableBoxTitles>
 										<S.TableBoxTitle>Length</S.TableBoxTitle>
@@ -141,13 +127,9 @@ export const OsteoSinus = () => {
 						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
-								<S.Title2>CHARACTERISTICS</S.Title2>
-								<div>Osteosinus Kit</div>
-								<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION
-									INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed
-									stopper.
-								</div>
-								<S.Title2>TABLE OF LENGTHS AND DIAMETERS</S.Title2>
+								<S.Title2>{t("SK-title2")}</S.Title2>
+								<div>{t("OS4")}</div>
+								<S.Title2>{t("tableTitle")}</S.Title2>
 								<S.TableBox>
 									<S.TableBoxTitles>
 										<S.TableBoxTitle>Length</S.TableBoxTitle>
@@ -177,13 +159,9 @@ export const OsteoSinus = () => {
 						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
-								<S.Title2>CHARACTERISTICS</S.Title2>
-								<div>Osteosinus Kit</div>
-								<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION
-									INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed
-									stopper.
-								</div>
-								<S.Title2>TABLE OF LENGTHS AND DIAMETERS</S.Title2>
+								<S.Title2>{t("SK-title2")}</S.Title2>
+								<div>{t("OS4")}</div>
+								<S.Title2>{t("tableTitle")}</S.Title2>
 								<S.TableBox>
 									<S.TableBoxTitles>
 										<S.TableBoxTitle>Length</S.TableBoxTitle>
@@ -213,13 +191,11 @@ export const OsteoSinus = () => {
 						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
-								<S.Title2>CHARACTERISTICS</S.Title2>
-								<div>Osteosinus Kit</div>
-								<div>The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION
-									INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed
-									stopper.
-								</div>
-								<S.Title2>BENEFITS</S.Title2>
+								<S.Title2>{t("SK-title2")}</S.Title2>
+								<div>{t("OS6/1")}</div>
+								<S.Title2>{t("BENEFITS")}</S.Title2>
+								<div>{t("OS6/2")}</div>
+								<div>{t("OS6/3")}</div>
 								<div></div>
 							</S.Text>
 						</S.TextBox>
@@ -230,4 +206,12 @@ export const OsteoSinus = () => {
 	);
 }
 
-
+const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 70px;
+  text-align: start;
+  line-height: 1.4;
+  ${font({weight: 400, fmax: 24, fmin: 16})};
+`

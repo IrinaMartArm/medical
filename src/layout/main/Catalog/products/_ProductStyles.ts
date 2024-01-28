@@ -75,6 +75,9 @@ const Title3 = styled.h4`
 `
 
 const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   text-align: start;
   line-height: 1.4;
   ${font({weight: 400, fmax: 24, fmin: 16})};

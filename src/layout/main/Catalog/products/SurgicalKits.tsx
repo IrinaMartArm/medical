@@ -42,7 +42,7 @@ export const SurgicalKits = () => {
 										{t('ID-PARA_ABOUT')}
 									</div>
 
-									<S.Title2>CHARACTERISTICS</S.Title2>
+									<S.Title2>{t('SK-title2')}</S.Title2>
 									<div>
 										{t('ID-PARA_CHARACTERISTICS')}
 									</div>
@@ -86,7 +86,7 @@ export const SurgicalKits = () => {
 										{t('ID-SPASSOR_ABOUT')}
 									</div>
 
-									<S.Title2>CHARACTERISTICS</S.Title2>
+									<S.Title2>{t('SK-title2')}</S.Title2>
 									<div>
 										{t('ID-SPASSOR_CHARACTERISTICS')}
 									</div>
