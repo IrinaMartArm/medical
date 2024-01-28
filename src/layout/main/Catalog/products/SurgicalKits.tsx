@@ -6,7 +6,6 @@ import kits2 from '../../../../images/pictures/box2.png'
 import {S} from './_ProductStyles'
 import {Button} from "../../../../components/Button";
 import {useTranslation} from "react-i18next";
-import p0 from "../../../../images/pictures/osteosinus/p1.png";
 
 export const SurgicalKits = () => {
 	const {t} = useTranslation();
@@ -39,19 +38,13 @@ export const SurgicalKits = () => {
 							<S.TextBox>
 								<S.Text>
 									<S.Title2>ABOUT</S.Title2>
-									<div>IDI launched the IDPARA surgical kit, which due to its enormous usefulness will
-										be of great value to dentists. It works universally for any implant surgery
-										regardless of the brand or type of implant.
+									<div>
+										{t('ID-PARA_ABOUT')}
 									</div>
 
 									<S.Title2>CHARACTERISTICS</S.Title2>
-									<div>IDPARA is a set of surgical instruments for applying parallel implants.
-										Composed of three elements: a drill with top, parallelism guides and
-										parallelizer (articulated instrument).
-									</div>
 									<div>
-										This kit is indicated when there is a need to place parallel implants to
-										optimize the life of the prosthesis.
+										{t('ID-PARA_CHARACTERISTICS')}
 									</div>
 								</S.Text>
 								{
@@ -90,12 +83,12 @@ export const SurgicalKits = () => {
 								<S.Text>
 									<S.Title2>ABOUT</S.Title2>
 									<div>
-										IDI launched the IDSPASSOR surgical kit, which due to its enormous usefulness will be of great value to dentists. It works universally for any implant surgery regardless of the brand or type of implant.
+										{t('ID-SPASSOR_ABOUT')}
 									</div>
 
 									<S.Title2>CHARACTERISTICS</S.Title2>
 									<div>
-										The IDSPASSOR is intended to create a surgical pre-drill for implant placement. Resting on the adjacent tooth, the drill allows precise guidance in the mesio-distal direction and perfectly positions the implant in the center of the future prosthetic tooth. avoiding the risk of poor positioning.
+										{t('ID-SPASSOR_CHARACTERISTICS')}
 									</div>
 								</S.Text>
 								{

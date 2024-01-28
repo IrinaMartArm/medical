@@ -35,11 +35,7 @@ export const Id3 = () => {
 						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>
-								The ID3 new implant, dedicated to lateral incisors, Ø3mm, Morse Taper. As strong as a
-								monobloc, prosthetic flexibility in addition!
-								The ID3 will complete your therapeutic arsenal.
-								It has a real 2,5° morse taper, perfectly airtight, with 6 cams anchor for flawless
-								prosthetic stability.
+								{t('ID3')}
 							</S.Text>
 							<div>
 								<S.Table src={tabl}/>
