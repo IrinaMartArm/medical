@@ -31,7 +31,7 @@ export const TurboDrill = () => {
 							<SwiperForDrill/>
 						</SmallImgBox>
 						<Button>
-							<a href={'/IDCAM.pdf'} target="_blank" rel="noreferrer">
+							<a href={'/turbo-drill.pdf'} target="_blank" rel="noreferrer">
 								{t('title3')}
 							</a>
 						</Button>

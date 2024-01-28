@@ -24,7 +24,7 @@ export const OsteoSinus = () => {
 				<S.DescriptionBox>
 					<S.BoxItems>
 						<S.SmallImgBox>
-							<S.Title2>OSTEOSINUS®</S.Title2>
+							<S.Title3>OSTEOSINUS®</S.Title3>
 							<S.SmallImg src={p0} alt={'implant'}/>
 							<Button>
 								<a href={'/IDI_Osteosinus.pdf'} target="_blank" rel="noreferrer">

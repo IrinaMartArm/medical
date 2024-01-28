@@ -4,13 +4,13 @@ export const Contacts = () => {
 	return (
 		<S.ContactsBox>
 			<div>
-				tel 94736252552552
+				Adress: Armenia, Yerevan Pushkin 15a
 			</div>
 			<div>
-				address Erevan
+				Tel: +374 91 001 521
 			</div>
 			<div>
-				som text
+				Email: sarmed@gmail.com
 			</div>
 		</S.ContactsBox>
 	)

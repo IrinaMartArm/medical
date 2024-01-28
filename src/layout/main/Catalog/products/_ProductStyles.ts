@@ -41,13 +41,13 @@ const SmallImgBox = styled.div`
     gap: 15px;
     justify-content: space-between;
     align-items: start;
-	max-width: 400px;
+	max-width: 500px;
   	width: 100%;
     padding: 15px 0;
 `
 
 const SmallImg = styled.img`
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
 `
 

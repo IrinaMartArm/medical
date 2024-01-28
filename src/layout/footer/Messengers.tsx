@@ -1,6 +1,7 @@
 import React from 'react';
 import {S} from "./FooterStyle";
 import {Icon} from "../../components/icon/Icon";
+import telegram from "../../images/svg/telegram.svg"
 
 const socialIconsData = [
 	{
@@ -8,6 +9,9 @@ const socialIconsData = [
 	},
 	{
 		iconId: "whatsapp",
+	},
+	{
+		iconId: "telegram",
 	},
 ];
 export const Messengers = () => {
@@ -20,9 +24,9 @@ export const Messengers = () => {
 							<S.SocialLink>
 								<Icon
 									iconId={i.iconId}
-									width="35px"
-									height="35px"
-									viewBox={'0 0 35px 35px'}
+									width="40px"
+									height="40px"
+									viewBox={'0 0 40px 40px'}
 								/>
 							</S.SocialLink>
 						</S.SocialItem>

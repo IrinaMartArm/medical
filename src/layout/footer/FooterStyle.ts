@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Theme} from "../../style/Theme";
+import {font} from "../../style/Common";
 
 const Footer = styled.footer`
   position: relative;
@@ -31,6 +32,7 @@ const ContactsBox = styled.div`
 	display: flex;
   flex-direction: column;
   color: white;
+  ${font({weight: 400, color: '#E9EFE7', fmax: 22, fmin: 16})};
   align-items: start;
   @media (max-width: 500px) {
     align-items: center;

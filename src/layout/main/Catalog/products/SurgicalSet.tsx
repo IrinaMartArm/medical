@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/Drell-Big.jpg'
-import p2 from '../../../../images/pictures/box.png'
+import p2 from '../../../../images/pictures/turbo-box.png'
 import {S} from './_ProductStyles'
 
 export const SurgicalSet = () => {
