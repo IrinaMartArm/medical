@@ -75,6 +75,7 @@ export const OsteoSinus = () => {
 										<S.TablImg src={t1} alt={''}/>
 									</S.TablImgBox>
 								</S.TableBox>
+								<div>{t("OSall")}</div>
 							</S.Text>
 						</S.TextBox>
 					</S.BoxItems>
@@ -108,6 +109,7 @@ export const OsteoSinus = () => {
 										<S.TablImg src={t1} alt={''}/>
 									</S.TablImgBox>
 								</S.TableBox>
+								<div>{t("OSall")}</div>
 							</S.Text>
 						</S.TextBox>
 					</S.BoxItems>
@@ -140,6 +142,7 @@ export const OsteoSinus = () => {
 										<S.TablImg src={t1} alt={''}/>
 									</S.TablImgBox>
 								</S.TableBox>
+								<div>{t("OSall")}</div>
 							</S.Text>
 						</S.TextBox>
 					</S.BoxItems>
@@ -172,6 +175,7 @@ export const OsteoSinus = () => {
 										<S.TablImg src={t1} alt={''}/>
 									</S.TablImgBox>
 								</S.TableBox>
+								<div>{t("OSall")}</div>
 							</S.Text>
 						</S.TextBox>
 					</S.BoxItems>
@@ -214,4 +218,7 @@ const Text = styled.div`
   text-align: start;
   line-height: 1.4;
   ${font({weight: 400, fmax: 24, fmin: 16})};
+  @media (max-width: 900px) {
+    padding-top: 5px;
+  }
 `

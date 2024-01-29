@@ -12,13 +12,16 @@ const BigImg = styled.img`
 `
 
 const DescriptionBox = styled.section`
- text-align: center;
+  text-align: center;
   width: 100%;
   padding: 0 20px 20px;
   margin: 40px auto;
   border-radius: 5px;
   border: 1px solid ${Theme.colors.border};
   background-color: white;
+  @media (max-width: 900px) {
+    margin: 5px auto;
+  }
 `
 
 const BoxItems = styled.div`
@@ -35,7 +38,6 @@ const BoxItems = styled.div`
 `
 
 const SmallImgBox = styled.div`
-    //position: relative;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -68,6 +70,9 @@ const Title = styled.h2`
 const Title2 = styled.div`
   padding: 25px 0;
   ${font({weight: 400, fmax: 28, fmin: 18})};
+  @media (max-width: 900px) {
+    padding: 5px 0;
+  }
 `
 const Title3 = styled.h4`
   padding: 20px 0;
