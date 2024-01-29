@@ -16,27 +16,31 @@ const FooterWrapper = styled.div`
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: 15px ;
-  
+  padding: 15px;
+
   @media (max-width: 500px) {
     flex-direction: column;
-	gap: 15px;
+    gap: 15px;
+    padding: 10px;
   }
 `
-const LogoBox =styled.div`
-  @media (max-width: 500px) {
-    display: none;
-  }
-`
+
 const ContactsBox = styled.div`
-	display: flex;
+  display: flex;
   flex-direction: column;
-  color: white;
-  ${font({weight: 400, color: '#E9EFE7', fmax: 22, fmin: 16})};
   align-items: start;
   @media (max-width: 500px) {
     align-items: center;
   }
+
+  p {
+    ${font({weight: 400, color: '#E9EFE7', fmax: 22, fmin: 16})};
+  }
+`
+
+const Contact = styled.div`
+  display: flex;
+  gap: 10px;
 `
 
 const Social = styled.div`
@@ -84,12 +88,12 @@ const Copyright = styled.small`
 
 export const S = {
 	Footer,
-	LogoBox,
 	ContactsBox,
+	Contact,
 	Social,
 	SocialItem,
 	SocialLink,
 	SocialList,
 	Copyright,
-    FooterWrapper
+	FooterWrapper
 }
