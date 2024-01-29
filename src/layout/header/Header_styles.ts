@@ -36,7 +36,6 @@ const HeaderTitle = styled.div`
 	display: none;
 `
 const StyledBasis = styled.div`
-  //border: 1px solid red;
   padding: 10px 40px;
   height: 40px;
   display: flex;
@@ -47,14 +46,12 @@ const Logotip = styled.img`
   max-width: 200px;
   width: 100%;
   height: 80px;
-  //border: 1px solid red;
 `
 const LogotipBox = styled.div`
   max-width: 200px;
   width: 100%;
   height: 100px;
   max-height: 80px;
-  //border: 1px solid red;
 `
 const StyledSelect = styled.select`
 	background-color: ${Theme.colors.secondary};

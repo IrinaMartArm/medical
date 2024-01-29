@@ -6,13 +6,12 @@ import {Catalog} from "./Catalog/Catalog";
 
 export const MainAge = () => {
 	return (
-		<div>
+		<main>
 			<MainSlider/>
 			<Container padding={'0 20px'}>
 				<Catalog/>
-				{/*<Main/>*/}
 			</Container>
-		</div>
+		</main>
 	);
 }
 

@@ -34,7 +34,6 @@ export const Header: React.FC = () => {
                       <Languages/>
                   </Wrapper>
           </S.Navigation>
-          <HeaderTitle/>
       </S.Header>
   );
 };

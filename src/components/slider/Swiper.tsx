@@ -44,7 +44,7 @@ export const SliderReact = () => {     //className={'swiper-container'}
 const SlideImg = styled.img`
   width: 100%;
 `
-const SliderBox = styled.div`
+const SliderBox = styled.section`
   max-width: 1900px;
   width: 100%;
   margin: 30px auto 0;

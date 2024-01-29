@@ -39,28 +39,29 @@ const ContactsBox = styled.div`
   }
 `
 
-const SocialList = styled.ul`
-  display: flex;
-  gap: 15px;
-  margin: 15px 0;
-
-`;
-
 const Social = styled.div`
   display: flex;
   flex-direction: column;
   color: white;
 `;
 
+const SocialList = styled.ul`
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+  z-index: 9999;
+`;
+
 const SocialItem = styled.li``
 
-const SocialLink = styled.div`
+const SocialLink = styled.li`
   border-radius: 50%;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   color: ${Theme.colors.accent};
   transition: ${Theme.animations.transition};
 

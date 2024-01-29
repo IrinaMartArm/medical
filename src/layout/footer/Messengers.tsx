@@ -1,17 +1,22 @@
 import React from 'react';
 import {S} from "./FooterStyle";
 import {Icon} from "../../components/icon/Icon";
-import telegram from "../../images/svg/telegram.svg"
+import whatsapp from "../../images/pictures/mess/whatsapp.svg"
+import viber from "../../images/pictures/mess/viber.svg"
+import telegram from "../../images/pictures/mess/telegram.svg"
 
 const socialIconsData = [
 	{
-		iconId: "viber",
+		iconId: viber,
+		name: 'viber'
 	},
 	{
-		iconId: "whatsapp",
+		iconId: whatsapp,
+		name: 'whatsapp'
 	},
 	{
-		iconId: "telegram",
+		iconId: telegram,
+		name: 'telegram'
 	},
 ];
 export const Messengers = () => {
@@ -20,16 +25,11 @@ export const Messengers = () => {
 			<S.SocialList>
 				{socialIconsData.map((i, index) => {
 					return (
-						<S.SocialItem key={index}>
-							<S.SocialLink>
-								<Icon
-									iconId={i.iconId}
-									width="40px"
-									height="40px"
-									viewBox={'0 0 40px 40px'}
-								/>
+						// <S.SocialItem key={index}>
+							<S.SocialLink key={index}>
+								<img src={i.iconId} alt={i.name}/>
 							</S.SocialLink>
-						</S.SocialItem>
+						// </S.SocialItem>
 					);
 				})}
 			</S.SocialList>

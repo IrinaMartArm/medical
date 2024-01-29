@@ -1,11 +1,13 @@
 import React from 'react';
 import {SliderReact} from "../../../components/slider/Swiper";
+import {HeaderTitle} from "../../header/HeaderTitle";
 
 export const MainSlider = () => {
 	return (
-		<div>
+		<section>
+			<HeaderTitle/>
 			<SliderReact/>
-		</div>
+		</section>
 	);
 }
 
