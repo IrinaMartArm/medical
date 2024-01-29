@@ -46,12 +46,13 @@ const Contact = styled.div`
 const Social = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 20px;
   color: white;
 `;
 
 const SocialList = styled.ul`
   display: flex;
-  gap: 15px;
+  gap: 25px;
   margin: 15px 0;
   z-index: 9999;
 `;

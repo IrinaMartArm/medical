@@ -33,7 +33,7 @@ export const Messengers = () => {
 					);
 				})}
 			</S.SocialList>
-			<S.Copyright>© some text</S.Copyright>
+			<S.Copyright>© 2024 SARMED</S.Copyright>
 		</S.Social>
 	);
 }

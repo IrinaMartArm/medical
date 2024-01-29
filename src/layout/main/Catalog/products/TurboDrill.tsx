@@ -38,7 +38,7 @@ export const TurboDrill = () => {
 					</S.SmallImgBox>
 						<S.TextBox>
 						<S.Text>
-							<div>DIFFERENTLY</div>
+							<div>{t('DIFFERENTLY')}</div>
 							<div>{t("TD1")}</div>
 							<div>{t("TD2")}</div>
 							<div>{t("TD3")}</div>
