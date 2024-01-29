@@ -3,7 +3,7 @@ import {Theme} from "../../style/Theme";
 import {font} from "../../style/Common";
 
 
-const Header = styled.header`
+const Header = styled.div`
   width: 100%;
   margin: 0 auto;
   z-index: 99999;

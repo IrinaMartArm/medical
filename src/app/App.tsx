@@ -21,8 +21,8 @@ function App() {
 	return (
 		<div className="App">
 			<Helmet>
-				<title>Моя страница</title>
-				<meta name="sarmed" content="SARMED Sarmed imports medical and dental equipments and materials." />
+				<title>SARMED</title>
+				<meta name="sarmed" content="SARMED Sarmed imports medical and dental equipments and materials."/>
 				{/* Другие теги, такие как meta, link, script можно добавить здесь */}
 			</Helmet>
 			<Header/>

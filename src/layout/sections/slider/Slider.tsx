@@ -4,10 +4,10 @@ import {HeaderTitle} from "../../header/HeaderTitle";
 
 export const MainSlider = () => {
 	return (
-		<section>
+		<header>
 			<HeaderTitle/>
 			<SliderReact/>
-		</section>
+		</header>
 	);
 }
 
