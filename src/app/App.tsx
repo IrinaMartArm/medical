@@ -13,12 +13,18 @@ import {ProstheticElements} from "../layout/main/Catalog/products/ProstheticElem
 import {TurboDrill} from "../layout/main/Catalog/products/TurboDrill";
 import {OsteoSinus} from "../layout/main/Catalog/products/OsteoSinus";
 import {AutoGoTop} from "../components/goTop/AutoGoTop";
+import { Helmet } from 'react-helmet';
 
 
 function App() {
 
 	return (
 		<div className="App">
+			<Helmet>
+				<title>Моя страница</title>
+				<meta name="sarmed" content="SARMED Sarmed imports medical and dental equipments and materials." />
+				{/* Другие теги, такие как meta, link, script можно добавить здесь */}
+			</Helmet>
 			<Header/>
 			<div>
 				<Routes>
