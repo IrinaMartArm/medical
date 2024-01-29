@@ -1,7 +1,33 @@
 {
-  "expo": {
-    "name": "Sarmed",
-    "slug": "sarmed"
-  }
+  "title1": "Home",
+  "title2": "About",
+  "title3": "Catalog",
+  "title4": "Contacts",
+  "BENEFITS": "ՕԳՈՒՏՆԵՐԸ",
+  "productTitle": "Products",
+  "tableTitle": "ԵՐԿԱՐՈՒԹՅՈՒՆՆԵՐԻ ԵՒ ՏՐԱՄԱԳԾԵՐԻ ԱՂՅՈՒՍԱԿ",
+  "ID3": "The ID3 new implant, dedicated to lateral incisors, Ø3mm, Morse Taper. As strong as a monobloc, prosthetic flexibility in addition! The ID3 will complete your therapeutic arsenal. It has a real 2,5° morse taper, perfectly airtight, with 6 cams anchor for flawless prosthetic stability.",
+  "SK-title2": "ԲՆՈՒԹԱԳՐԵՐԸ",
+  "ID-PARA_ABOUT": "IDI launched the IDPARA surgical kit, which due to its enormous usefulness will be of great value to dentists. It works universally for any implant surgery regardless of the brand or type of implant.",
+  "ID-PARA_CHARACTERISTICS": "IDPARA is a set of surgical instruments for applying parallel implants. Composed of three elements: a drill with top, parallelism guides and parallelizer (articulated instrument).\nThis kit is indicated when there is a need to place parallel implants to optimize the life of the prosthesis.",
+  "ID-SPASSOR_ABOUT": "IDI launched the IDSPASSOR surgical kit, which due to its enormous usefulness will be of great value to dentists. It works universally for any implant surgery regardless of the brand or type of implant.",
+  "ID-SPASSOR_CHARACTERISTICS": "The IDSPASSOR is intended to create a surgical pre-drill for implant placement. Resting on the adjacent tooth, the drill allows precise guidance in the mesio-distal direction and perfectly positions the implant in the center of the future prosthetic tooth. avoiding the risk of poor positioning.",
+  "TD1": "The TURBOdrill® drill is an innovation of the IDI company – IMPLANTS DIFFUSION INTERNATIONAL. It offers a new drilling approach thanks to its secure bladed stopper.",
+  "TD2": "Control each drilling parameters : safety, irrigation, bone temperature & speed.",
+  "TD3": "Cylindro-tapered drill, available in 4 lengths : 8, 10, 12 and 15 mm and 3 diameters : 3,6, 4,2 and 5,2 mm.",
+  "TD4": "The TURBOdrill® is a cylindro-tapered drill with 4 serrated blades. It has a hollowed out stopper with blades acting as a turbine and leading the irrigation liquid along the blades till the bone socket. This intense irrigation phenomenon optimizes the cooling of the drill and thus of the operating site. The TURBOdrill® may be used up to 1 200 rpm with irrigation without bone heating up. The fixed stopper enables a safe drilling even with high speed.  There are two sizes: - TURBOdrill® for the IDCAM . Several studies show that the irrigation, the pressure exerted by the practitioner when drilling, the drilling duration and more generally the bone temperature rise have an impact on the osseointegration of the implant inserted. The TURBOdrill® plays on all these factors in order to optimize the implant success.",
+  "OS1/1": "OsteoSinus®-ը ամենահարմար օստեոտոմն է բյուրեղյա միջոցով մաքսիլյար սինուսը բարձրացնելու համար մեկ կամ երկու իմպլանտների տեղադրման համար:",
+  "OS1/2": "Օստեոսինուսում օստեոտոմներն ունեն 3-ից 8 մմ բարձրության ֆիքսված անվտանգության գագաթներ: Այս հատկությունը թույլ է տալիս մեզ ստեղծել սինուսի կեղևի վերահսկվող կոտրվածք 1 մմ-ից ոչ ավելի ազդեցությամբ, ինչի հետևանքով մեր տեղադրած կենսանյութը առաջընթաց է ապրում՝ առաջացնելով սինուսային թաղանթի անջատում և բարձրացում դանդաղ և դանդաղ։ առաջադեմ ձևով.",
+  "OS1/3": "Այս տեխնիկան, ըստ բժիշկ Բեռնար Լազարուի (Ֆրանսիա) և դոկտոր Ժիլ Բուխրիսի (Ֆրանսիա), նոր դիակի վրա կատարված ուսումնասիրության ընթացքում հասել է 92% հաջողության:",
+  "OS1/4": "Կլինիկորեն ապացուցված է, որ սինուսի թաղանթը չպատռելը էական է մաքսիլյար սինուսի փոխպատվաստման հաջողության համար:",
+  "OS1/5": "Այս տեխնիկան մեզ թույլ է տալիս պարզ, անվտանգ և ոչ ինվազիվ եղանակով իմպլանտներ տեղադրել բյուրեղյա միջոցով, 5-ից 8 մմ մնացած ոսկորների հետ կապված իրավիճակներում:",
+  "OS2/1": "The set includes six straight Osteotomes with safety caps and color code, Ø 3mm and lengths: 3, 4, 5, 6, 7, 8 mm.",
+  "OS2/2": "Place the RectiSinus inside the Osteotome Holder, position the guide inside the cavity, after passing the drill and using the sliding mass to compact the bone.",
+  "OS3/1": "The set consists of six angled Osteotomes with safety caps and color code, Ø 3 mm and 3, 4, 5, 6, 7, 8 mm in length.",
+  "OS3/2": "Place the Angulosinus inside the Osteotome Holder, position the guide inside the cavity, after passing the drill and using the sliding mass to compact the bone.",
+  "OS4": "This set contains six bone recovery drills, color coded and safety top, Ø 3mm and lengths: 3, 4, 5, 6, 7 and 8mm.",
+  "OS6/1": "This set contains a disc with blades, Ø 3 mm (red ring).",
+  "OS6/2": "The disc is used after drilling with the Forsinus with the same diameter.",
+  "OS6/3": "Using a circular motion, the blades widen the base of the bone below the breast and allow for increased elasticity when using the osteotome."
 }
 
