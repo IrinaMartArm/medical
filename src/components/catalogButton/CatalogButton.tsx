@@ -2,14 +2,16 @@ import React, {useState, MouseEvent} from "react";
 import {S} from './_CatalogButton'
 import {useTranslation} from "react-i18next";
 
+
 const items = [
 	{path: '/ID_CAM', name: 'ID CAM'},
 	{path: '/ID3', name: 'ID 3'},
-	{path: '/SurgicalSet', name: 'Surgical set'},
-	{path: '/SurgicalKits', name: 'Surgical kits'},
 	{path: '/ProstheticElements', name: 'Prosthetic Elements'},
 	{path: '/TurboDrill', name: 'TURBODrill'},
+	{path: '/SurgicalSet', name: 'Surgical set'},
 	{path: '/OsteoSinus', name: 'Osteosinus kit'},
+	{path: '/SurgicalGuide', name: 'Surgical Guide'},
+	{path: '/SurgicalKits', name: 'Surgical kits'},
 ]
 
 export const CatalogButton = () => {

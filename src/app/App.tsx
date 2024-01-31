@@ -14,6 +14,7 @@ import {TurboDrill} from "../layout/main/Catalog/products/TurboDrill";
 import {OsteoSinus} from "../layout/main/Catalog/products/OsteoSinus";
 import {AutoGoTop} from "../components/goTop/AutoGoTop";
 import { Helmet } from 'react-helmet';
+import {SurgicalGuide} from "../layout/main/Catalog/products/SurgicalDuide";
 
 
 function App() {
@@ -23,19 +24,19 @@ function App() {
 			<Helmet>
 				<title>SARMED</title>
 				<meta name="sarmed" content="SARMED Sarmed imports medical and dental equipments and materials."/>
-				{/* Другие теги, такие как meta, link, script можно добавить здесь */}
 			</Helmet>
 			<Header/>
 			<div>
 				<Routes>
 					<Route path={'/'} element={<MainAge/>}/>
 					<Route path={'/ID_CAM'} element={<IdCam/>}/>
-					<Route path={'ID3'} element={<Id3/>}/>
-					<Route path={'SurgicalSet'} element={<SurgicalSet/>}/>
-					<Route path={'SurgicalKits'} element={<SurgicalKits/>}/>
+					<Route path={'/ID3'} element={<Id3/>}/>
+					<Route path={'/SurgicalSet'} element={<SurgicalSet/>}/>
+					<Route path={'/SurgicalKits'} element={<SurgicalKits/>}/>
 					<Route path={'ProstheticElements'} element={<ProstheticElements/>}/>
 					<Route path={'TurboDrill'} element={<TurboDrill/>}/>
 					<Route path={'OsteoSinus'} element={<OsteoSinus/>}/>
+					<Route path={'SurgicalGuide'} element={<SurgicalGuide/>}/>
 					<Route path="/404" element={<h1>404: PAGE NOTFOUND</h1>}/>
 					<Route path="*" element={<h1>404: PAGE NOT FOUND</h1>}/>
 				</Routes>

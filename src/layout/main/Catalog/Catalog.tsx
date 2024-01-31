@@ -14,6 +14,7 @@ import kits from '../../../images/pictures/box2.png'
 import D from '../../../images/pictures/D.png'
 import Drill from '../../../images/pictures/Drill.jpg'
 import osteo from '../../../images/pictures/osteosinus-kit.png'
+import Guide from '../../../images/pictures/guide-small.png'
 import {NavLink} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 
@@ -52,27 +53,11 @@ const Items = [
   },
   {
     id: v1(),
-    title: "Surgical set",
-    type: 'kit',
-    path: "SurgicalSet",
-    img: turboBox,
-    alt: 'SARMED Surgical set'
-  },
-  {
-    id: v1(),
     title: "Prosthetic elements",
     type: 'Implants',
     path: "/ProstheticElements",
     img: D,
     alt: 'SARMED Prosthetic elements'
-  },
-  {
-    id: v1(),
-    title: "Surgical kits",
-    type: 'kit',
-    path: "/SurgicalKits",
-    img: kits,
-    alt: 'SARMED Surgical kits'
   },
   {
     id: v1(),
@@ -84,11 +69,35 @@ const Items = [
   },
   {
     id: v1(),
+    title: "Surgical set",
+    type: 'kit',
+    path: "SurgicalSet",
+    img: turboBox,
+    alt: 'SARMED Surgical set'
+  },
+  {
+    id: v1(),
     title: "Osteosinus kit",
     type: 'kit',
     path: "/OsteoSinus",
     img: osteo,
     alt: 'SARMED Osteosinus kit'
+  },
+  {
+    id: v1(),
+    title: "SurgicalGuide",
+    type: 'Guide',
+    path: "/SurgicalGuide",
+    img: Guide,
+    alt: 'SARMED SurgicalGuide'
+  },
+  {
+    id: v1(),
+    title: "Surgical kits",
+    type: 'kit',
+    path: "/SurgicalKits",
+    img: kits,
+    alt: 'SARMED Surgical kits'
   },
 ];
 

@@ -7,17 +7,17 @@ const data = [
 	{
 		img: loc,
 		name: 'address',
-		text: 'Adress: Armenia, Yerevan Pushkin 15a'
-	},
-	{
-		img: tel,
-		name: 'phone',
-		text: 'Tel: +374 91 001 521'
+		text: 'Address: Pushkin 15a, Yerevan, Armenia'
 	},
 	{
 		img: mail,
 		name: 'email',
 		text: 'Email: sarmed@gmail.com'
+	},
+	{
+		img: tel,
+		name: 'phone',
+		text: 'Tel: +374 91 001 521'
 	},
 ]
 

@@ -30,6 +30,7 @@ const BoxItems = styled.div`
   justify-content: center;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 20px;
   @media (max-width: 900px) {
     flex-direction: column;
     margin: -20px auto;
@@ -57,7 +58,7 @@ const TextBox = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding: 10px;
+  //padding: 10px;
   max-width: 800px;
   width: 100%;
   gap: 20px;

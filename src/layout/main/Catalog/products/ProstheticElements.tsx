@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/protez.png'
-import p2 from '../../../../images/pictures/D.png'
+import p2 from '../../../../images/pictures/prostatic.jpg'
 import {S} from './_ProductStyles'
 
 export const ProstheticElements = () => {
@@ -12,9 +12,9 @@ export const ProstheticElements = () => {
 				<S.DescriptionBox>
 					<S.Title>Prosthetic Elements</S.Title>
 					<S.BoxItems>
-						{/*<S.SmallImgBox>*/}
+						<S.SmallImgBox>
 						<S.SmallImg src={p2} alt={'implant'}/>
-						{/*</S.SmallImgBox>*/}
+						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, alias, necessitatibus?
 								Commodi culpa dignissimos dolor magnam necessitatibus totam? Adipisci architecto

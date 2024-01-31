@@ -44,11 +44,11 @@ export const TurboDrill = () => {
 							<div>{t("TD3")}</div>
 						</S.Text>
 							<S.Text2>{t("TD4")}</S.Text2>
-							{/*<S.VideoBox>*/}
+							<S.VideoBox>
 								{
 									width < breakPoint ? <MobileVideos/> : <DesktopVideos/>
 								}
-							{/*</S.VideoBox>*/}
+							</S.VideoBox>
 							</S.TextBox>
 						</S.BoxItems>
 				</S.DescriptionBox>
