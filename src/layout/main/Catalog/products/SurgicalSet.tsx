@@ -3,9 +3,11 @@ import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/Drell-Big.jpg'
 import p2 from '../../../../images/pictures/turbo-box.png'
 import {S} from './_ProductStyles'
+import {Button} from "../../../../components/Button";
+import {useTranslation} from "react-i18next";
 
 export const SurgicalSet = () => {
-
+	const {t} = useTranslation();
 	const [width, setWidth] = useState(window.innerWidth)
 	const breakPoint = 580
 	useEffect(() => {
@@ -23,6 +25,11 @@ export const SurgicalSet = () => {
 					<S.BoxItems>
 						<S.SmallImgBox>
 							<S.SmallImg src={p2} alt={'implant'}/>
+							<Button>
+								<a href={'/IDPRO.pdf'} target="_blank" rel="noreferrer">
+									{t('title3')}
+								</a>
+							</Button>
 						</S.SmallImgBox>
 						<S.TextBox>
 							<S.Text>

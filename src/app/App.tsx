@@ -14,7 +14,7 @@ import {TurboDrill} from "../layout/main/Catalog/products/TurboDrill";
 import {OsteoSinus} from "../layout/main/Catalog/products/OsteoSinus";
 import {AutoGoTop} from "../components/goTop/AutoGoTop";
 import { Helmet } from 'react-helmet';
-import {SurgicalGuide} from "../layout/main/Catalog/products/SurgicalDuide";
+import {SurgicalGuide} from "../layout/main/Catalog/products/SurgicalGuide";
 
 
 function App() {
