@@ -67,14 +67,14 @@ const TextBox = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  //padding: 10px;
+  padding: 10px;
   max-width: 800px;
   width: 100%;
   gap: 20px;
 `
 
 const Title = styled.h2`
-  padding: 15px;
+  padding: 35px;
   ${font({weight: 500, fmax: 42, fmin: 24})};
 `
 const Title2 = styled.div`
