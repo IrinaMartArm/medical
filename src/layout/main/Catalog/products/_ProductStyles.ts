@@ -48,9 +48,18 @@ const SmallImgBox = styled.div`
   	width: 100%;
     padding: 15px 0;
 `
+const SmallImgBox2 = styled.div`
+	max-width: 1000px;
+  	width: 100%;
+    padding: 15px 0;
+`
 
 const SmallImg = styled.img`
-  max-width: 500px;
+  max-width: 700px;
+  width: 100%;
+`
+const SmallImg2 = styled.img`
+  max-width: 1000px;
   width: 100%;
 `
 
@@ -159,5 +168,5 @@ const TablImgBox = styled.div`
 `
 
 export const S = {
-  ProductBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems, ButtonsBox, Button, Title2, TableBox, TableBoxTitles, TableBoxTitle, TablImg, TablImgBox, Title3
+  ProductBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems, ButtonsBox, Button, Title2, TableBox, TableBoxTitles, TableBoxTitle, TablImg, TablImgBox, Title3, SmallImgBox2, SmallImg2
 }
