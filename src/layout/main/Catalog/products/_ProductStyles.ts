@@ -87,6 +87,9 @@ const Text = styled.div`
   text-align: start;
   line-height: 1.4;
   ${font({weight: 400, fmax: 24, fmin: 16})};
+  span {
+    ${font({weight: 400, fmax: 28, fmin: 20})};
+  }
 `
 
 const Text2 = styled.div`

@@ -2,6 +2,7 @@ import React from 'react';
 import {Container} from "../../../../components/Container";
 import p1 from '../../../../images/pictures/protez.png'
 import p2 from '../../../../images/pictures/prostatic.jpg'
+import arr from '../../../../images/pictures/arr.png'
 import {S} from './_ProductStyles'
 
 export const ProstheticElements = () => {
@@ -16,15 +17,10 @@ export const ProstheticElements = () => {
 						<S.SmallImg src={p2} alt={'implant'}/>
 						</S.SmallImgBox>
 						<S.TextBox>
-							<S.Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, alias, necessitatibus?
-								Commodi culpa dignissimos dolor magnam necessitatibus totam? Adipisci architecto
-								doloribus ea earum eius error ex facere hic illum impedit iste libero minus nesciunt
-								officia placeat praesentium quas quos repellat sint sit tempore vel voluptates,
-								voluptatibus. Aut error officia perferendis quaerat voluptates? Excepturi in nisi
-								perferendis quis rerum, sequi similique? Ad deserunt, doloremque facere harum ipsum
-								nobis reiciendis suscipit tenetur veritatis vitae! Aperiam asperiores, excepturi illum
-								laboriosam quae quos vel velit? Cum dolorum excepturi explicabo fugiat impedit incidunt
-								ipsa, labore magnam minima numquam quas quibusdam quisquam sunt, tenetur, ut veritatis?
+							<S.Text>
+								<div></div>
+								<div><img src={arr} alt={''} width={'50px'}/><span>Features</span></div>
+
 							</S.Text>
 						</S.TextBox>
 					</S.BoxItems>
