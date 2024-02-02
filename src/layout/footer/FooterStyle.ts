@@ -45,6 +45,9 @@ const Contact = styled.div`
 const Contact2 = styled.a`
   display: flex;
   gap: 10px;
+  &:hover p{
+	color: #E5B80B;
+  }
 `
 
 const Social = styled.div`

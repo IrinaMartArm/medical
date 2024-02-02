@@ -47,9 +47,5 @@ const SlideImg = styled.img`
 const SliderBox = styled.section`
   max-width: 1900px;
   width: 100%;
-  margin: 30px auto 0;
-  
-  @media ${Theme.media.break} {
-    margin: 10px auto 0;
-  }
+  margin: 0 auto;
 `

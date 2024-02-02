@@ -54,10 +54,7 @@ export const GlobalStyle = createGlobalStyle`
 
 
     section {
-        padding: 40px 0;
-        // @media ${Theme.media.mobile} {
-        //     padding: 20px;
-        // }
+        padding: 10px 0;
     }
 
     // section:nth-of-type(odd) {
