@@ -14,11 +14,11 @@ const data = [
 		name: 'email',
 		text: 'Email: sarmed@gmail.com'
 	},
-	{
-		img: tel,
-		name: 'phone',
-		text: 'Tel: +374 91 001 521'
-	},
+	// {
+	// 	img: tel,
+	// 	name: 'phone',
+	// 	text: 'Tel: +374 91 001 521'
+	// },
 ]
 
 export const Contacts = () => {
@@ -31,6 +31,10 @@ export const Contacts = () => {
 						<p>{el.text}</p>
 					</S.Contact>)
 			})}
+			<S.Contact2 href={'+374 91 001 521'}>
+				<img src={tel} alt={''}/>
+				<p>Tel: +374 91 001 521</p>
+			</S.Contact2>)
 		</S.ContactsBox>
 	)
 }

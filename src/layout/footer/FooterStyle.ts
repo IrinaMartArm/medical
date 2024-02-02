@@ -42,6 +42,10 @@ const Contact = styled.div`
   display: flex;
   gap: 10px;
 `
+const Contact2 = styled.a`
+  display: flex;
+  gap: 10px;
+`
 
 const Social = styled.div`
   display: flex;
@@ -91,6 +95,7 @@ export const S = {
 	Footer,
 	ContactsBox,
 	Contact,
+	Contact2,
 	Social,
 	SocialItem,
 	SocialLink,
