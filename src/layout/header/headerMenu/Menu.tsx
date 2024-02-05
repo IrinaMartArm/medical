@@ -26,16 +26,16 @@ export const Menu = (props: MenuType) => {
 				</S.HomeLink>
 			</S.MenuItem>
 			<CatalogButton/>
-			<S.MenuItem>
-				<S.HomeLink to={'/about'}>
-					{t('title2')}
-				</S.HomeLink>
-			</S.MenuItem>
-			<S.MenuItem>
-				<S.HomeLink to={'/contacts'}>
-					{t('title4')}
-				</S.HomeLink>
-			</S.MenuItem>
+			{/*<S.MenuItem>*/}
+			{/*	<S.HomeLink to={'/about'}>*/}
+			{/*		{t('title2')}*/}
+			{/*	</S.HomeLink>*/}
+			{/*</S.MenuItem>*/}
+			{/*<S.MenuItem>*/}
+			{/*	<S.HomeLink to={'/contacts'}>*/}
+			{/*		{t('title4')}*/}
+			{/*	</S.HomeLink>*/}
+			{/*</S.MenuItem>*/}
 		</ul>
 	);
 };
