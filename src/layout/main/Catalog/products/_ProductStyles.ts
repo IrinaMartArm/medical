@@ -176,6 +176,7 @@ const Size = styled.span`
   display: flex;
   align-items: center;
   gap: 5px;
+  white-space: nowrap;
 `
 export const S = {
   ProductBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems, ButtonsBox, Button, Title2, TableBox, TableBoxTitles, TableBoxTitle, TablImg, TablImgBox, Title3, SmallImgBox2, SmallImg2, Sizes, Size
