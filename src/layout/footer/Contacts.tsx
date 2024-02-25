@@ -14,11 +14,6 @@ const data = [
 		name: 'email',
 		text: 'Email: sarmed@gmail.com'
 	},
-	// {
-	// 	img: tel,
-	// 	name: 'phone',
-	// 	text: 'Tel: +374 91 001 521'
-	// },
 ]
 
 export const Contacts = () => {

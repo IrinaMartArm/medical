@@ -20,15 +20,15 @@ import {useTranslation} from "react-i18next";
 
 const catigories: Array<{status: StatusType, title: string}> = [
   {
-    title: 'All',
+    title: 'sort1',
     status: 'all'
   },
   {
-    title: 'Implants',
+    title: 'sort2',
     status: 'Implants'
   },
   {
-    title: 'Kits',
+    title: 'sort3',
     status: 'kit'
   },
 
