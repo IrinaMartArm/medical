@@ -166,7 +166,17 @@ const TablImgBox = styled.div`
   max-width: 500px;
   width: 100%;
 `
-
+const Sizes = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+`
+const Size = styled.span`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`
 export const S = {
-  ProductBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems, ButtonsBox, Button, Title2, TableBox, TableBoxTitles, TableBoxTitle, TablImg, TablImgBox, Title3, SmallImgBox2, SmallImg2
+  ProductBox, BigImg, SmallImg, TextBox, Text, Title, SmallImgBox, DescriptionBox, Text2, Table, VideoBox, BoxItems, ButtonsBox, Button, Title2, TableBox, TableBoxTitles, TableBoxTitle, TablImg, TablImgBox, Title3, SmallImgBox2, SmallImg2, Sizes, Size
 }

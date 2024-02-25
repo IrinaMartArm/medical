@@ -47,11 +47,16 @@ export const IdCam = () => {
 								<div>- Cam retention</div>
 								<div>- 2,5° Morse taper (same to all diameters from the range)</div>
 								<div>-Universal ISO threading</div>
-								<div>LENGTH: <img src={yell} alt={''}/><strong> 8mm</strong> - <img
-									src={red} alt={''}/><strong> 10mm</strong> - <img src={gr} alt={''}/><strong> 12mm</strong> - <img
-									src={bl} alt={''}/><strong> 15mm</strong></div>
-								<div>DIAMETERS: <strong> 3,5mm</strong> - <strong> 4,2mm</strong> - <strong> 5,2mm</strong>
-								</div>
+								<S.Sizes>LENGTH:
+									<S.Size><img src={yell} alt={''}/><strong> 8mm</strong> - </S.Size>
+									<S.Size><img
+										src={red} alt={''}/><strong> 10mm</strong> - </S.Size>
+									<S.Size><img src={gr} alt={''}/><strong> 12mm</strong> - </S.Size>
+									<S.Size><img
+										src={bl} alt={''}/><strong> 15mm</strong></S.Size>
+									</S.Sizes>
+								<S.Sizes>DIAMETERS: <strong> 3,5mm</strong> - <strong> 4,2mm</strong> - <strong> 5,2mm</strong>
+								</S.Sizes>
 							</S.Text>
 						</S.TextBox>
 					</S.BoxItems>
