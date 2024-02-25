@@ -107,7 +107,7 @@ const Menu = styled.nav`
     ul {
         display: flex;
         justify-content: space-between;
-        max-width: 355px;
+        max-width: 455px;
         width: 100%;
         margin: 0 auto 40px;
     }
